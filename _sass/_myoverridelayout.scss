@@ -1,0 +1,76 @@
+// This is a partial.
+// It lies in <source>/_sass, waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+
+@charset "utf-8";
+
+body {
+  background-color: #fafafa;
+  }
+
+/**
+* Links
+*/
+a {
+  color: $brand-color;
+&:visited {
+  color: $brand-color;
+  }
+
+  &:hover {
+  color: green;
+  }
+}
+
+/* a workaround the main/index page has a h2 for the body title of Posts
+ * the other pages, about, contact, the body title is h1
+ * overiding h2 or h1 does not work because the /@include from sass _layout scss wipes it out
+ * with this adjustment they look the same.
+ */
+
+.post-list-heading {
+  @include relative-font-size(2.625);
+}
+
+.post-link, .post-link:visited  {
+  color: $brand-color;
+}
+
+.post-link:hover {
+  color: $brand-color;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.site-nav .page-link {
+ color: $text-color;
+}
+
+.site-nav .page-link:hover {
+  color: $brand-color;
+}
+
+
+// overrides .site-title in _sass/minima/_layout.scss which defaulted to a grey
+.site-title, .site-title:visited {
+  color: $text-color; 
+}
+
+.site-title:hover {
+  color: $brand-color;
+}
+
+.site-header {
+  background-color: #fafafa;
+  background-image: linear-gradient(to bottom, #d7d7d7, #FAFAFA); /* changed to a different shade #c6c6c6 to #d7d7d7 */
+  border-bottom: 1px solid #ccc; 
+  margin-bottom: 1px !important;
+ }
+
+.site-footer {
+  background-color: #fafafa;
+  background-image: linear-gradient(to bottom, #FAFAFA, #c6c6c6);
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1px !important;
+  }
+
