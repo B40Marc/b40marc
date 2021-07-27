@@ -21,7 +21,7 @@
 title: Marc's Musings 
 email:  " &#98;&#52;&#48;&#109;&#97;&#114;&#99;&commat;&#97;&#111;&#108;&period;&#99;&#111;&#109; "  
 description: >- # this means to ignore newlines until "baseurl:"
-  ... thought I'd something more to say ...
+ ... Thought I'd something more to say ...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 unpublished: false 
