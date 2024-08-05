@@ -2,7 +2,12 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- leaflet js and css -->
+     
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Maps | Marc’s Musings</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Maps" />
@@ -17,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Maps" />
 <script type="application/ld+json">
-{"description":"Map Experiment with Leaflet","@type":"BlogPosting","headline":"Maps","dateModified":"2024-07-27T00:00:00-04:00","datePublished":"2024-07-27T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/07/27/Map.html"},"url":"http://localhost:4000/2024/07/27/Map.html","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-07-27T00:00:00-04:00","datePublished":"2024-07-27T00:00:00-04:00","description":"Map Experiment with Leaflet","headline":"Maps","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/07/27/Map.html"},"url":"http://localhost:4000/2024/07/27/Map.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Marc's Musings" /></head>
 <body><header class="site-header" role="banner">
@@ -53,20 +58,31 @@
 Leaflet thru Github pages on Jekyll. 
 Wish me luck.</p>
 
-<div id="leaflet-map-5ac477f9cb48ba7ce302bba1bc9dbcba" class="leaflet-map"></div>
+<div id="leaflet-map-55aef2f2c6d72e1deecd85b06b97f6cb" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
     var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
 
     // Get tag input arguments & inside block object list
-    var tagInputArg = {};
+    var tagInputArg = {"zoom" : 13 } ;
     var blockLeafletItems = [
-    {}
+
+    {id: "fc18e719dddf3e08f63a083688223ca1",
+              type: "LeafletMarker",
+              value: {"latitude" : 44.010868,
+                       "longitude" : -71.6491,
+    "popupContent": "Russell Pond Campground"}
+  },
+
+{id: "7acecaee5d0d973c2367981054759c67",
+              type: "LeafletGeoJSON",
+              value: "/assets/geojson/2024-07-20T17-45-28Z2.geojson" },
+
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-5ac477f9cb48ba7ce302bba1bc9dbcba";
+    var defaultMapElId = "leaflet-map-55aef2f2c6d72e1deecd85b06b97f6cb";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -199,7 +215,7 @@ Wish me luck.</p>
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 5ac477f9cb48ba7ce302bba1bc9dbcba with these args:");
+        console.log("Creating map 55aef2f2c6d72e1deecd85b06b97f6cb with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1101,6 +1117,14 @@ Wish me luck.</p>
 })();
 </script>
 
+<p>Yea!! Partial success, a map with a pop-up marker. The correct map, but not a walk trace. (resolved)<br />
+I’ve been trying to add a “LineString” layer for days, literally, with no joy. So, I’ll keep reading and experimenting. It will come.</p>
+
+<p>Double Yea!!. More success, and finally a trace of my walk/hike within the map. It’s embarassing to think of how long this has taken and how many websearches I’ve made in the effort (hint:over a week).</p>
+
+<p>This walk was through Russel Pond Campground in the White Mountains of New Hampshire. I was surveying the entire campground for suitable campsites for future visits.</p>
+
+<p>Also, I’d be remiss for not giving a thank you and shout-out to <a href="https://davidjvitale.com">David Vitale </a> for his amazing work on the <a href="https://davidjvitale.com/tech/jekyll-leaflet/"> jekyll-leaflet </a>plugin!</p>
 
   </div><a class="u-url" href="/2024/07/27/Map.html" hidden></a>
 </article>

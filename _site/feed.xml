@@ -1,34 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-27T11:20:02-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marc’s Musings</title><subtitle>... Thought I'd something more to say ...</subtitle><entry><title type="html">Maps</title><link href="http://localhost:4000/2024/07/27/Map.html" rel="alternate" type="text/html" title="Maps" /><published>2024-07-27T00:00:00-04:00</published><updated>2024-07-27T00:00:00-04:00</updated><id>http://localhost:4000/2024/07/27/Map</id><content type="html" xml:base="http://localhost:4000/2024/07/27/Map.html">&lt;h3 id=&quot;map-experiment-with-leaflet&quot;&gt;Map Experiment with Leaflet&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-05T07:40:01-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marc’s Musings</title><subtitle>... Thought I'd something more to say ...</subtitle><entry><title type="html">Maps</title><link href="http://localhost:4000/2024/07/27/Map.html" rel="alternate" type="text/html" title="Maps" /><published>2024-07-27T00:00:00-04:00</published><updated>2024-07-27T00:00:00-04:00</updated><id>http://localhost:4000/2024/07/27/Map</id><content type="html" xml:base="http://localhost:4000/2024/07/27/Map.html"><![CDATA[<h3 id="map-experiment-with-leaflet">Map Experiment with Leaflet</h3>
 
-&lt;p&gt;My effort to start publishing maps of my walks and hikes online.
+<p>My effort to start publishing maps of my walks and hikes online.
 Leaflet thru Github pages on Jekyll. 
-Wish me luck.&lt;/p&gt;
+Wish me luck.</p>
 
-&lt;div id=&quot;leaflet-map-5ac477f9cb48ba7ce302bba1bc9dbcba&quot; class=&quot;leaflet-map&quot;&gt;&lt;/div&gt;
-&lt;script&gt;(() =&gt; {
+<div id="leaflet-map-55aef2f2c6d72e1deecd85b06b97f6cb" class="leaflet-map"></div>
+<script>(() => {
 // Specify configuration variables, setup any elements and styling
-    var leafletCdn = &quot;https://unpkg.com/leaflet@1.6.0/dist/&quot;;
-    var esriLeafletCdn = &quot;https://unpkg.com/esri-leaflet/dist/&quot;;
+    var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
+    var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
 
-    // Get tag input arguments &amp; inside block object list
-    var tagInputArg = {};
+    // Get tag input arguments & inside block object list
+    var tagInputArg = {"zoom" : 13 } ;
     var blockLeafletItems = [
-    {}
+
+    {id: "fc18e719dddf3e08f63a083688223ca1",
+              type: "LeafletMarker",
+              value: {"latitude" : 44.010868,
+                       "longitude" : -71.6491,
+    "popupContent": "Russell Pond Campground"}
+  },
+
+{id: "7acecaee5d0d973c2367981054759c67",
+              type: "LeafletGeoJSON",
+              value: "/assets/geojson/2024-07-20T17-45-28Z2.geojson" },
+
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = &quot;leaflet-map-5ac477f9cb48ba7ce302bba1bc9dbcba&quot;;
-   var defaultMapElStyle = &quot;height:300px; margin-top:15px; margin-bottom:15px&quot;;
+    var defaultMapElId = "leaflet-map-55aef2f2c6d72e1deecd85b06b97f6cb";
+   var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
         mapEl.id = tagInputArg['divId'];
     }
-    var defaultMapCssEl = document.createElement(&quot;style&quot;);
+    var defaultMapCssEl = document.createElement("style");
     defaultMapCssEl.innerHTML = 
-        &quot;#&quot; + defaultMapElId + &quot;{&quot; + defaultMapElStyle + &quot;}&quot;;
+        "#" + defaultMapElId + "{" + defaultMapElStyle + "}";
     document.head.appendChild(defaultMapCssEl);
 
-    var newWindowImgSrcBase64 = &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH4wUVFzAHq2j99AAAAV9JREFUSMdjYKAxYCRHk5ubG9+1a9fm/v//H6cadnb2G/fu3atlIceC379/c3z9+jUEn5q/f/8eYWBgYECxQE5OroqA2Y8ePXq0hJWV9Qc3N/caZB8wMjJKff361QpvEAkKCv4nYMGh9+/f26MLamhoyLx9+3b/nz9/VJCC6MiLFy9sWXCE3xlGRsZvWKQu4DOciYnpCzc396HPnz97weRxWRD/8OHDa4TiAt1wfn5+z79//zoxMDDALWAiN/lhM/zevXtH0NUx0dJwsiwgxXCccUCJ4dzc3DP+//+/gZ2d/duLFy9Is+Djx4+rCbn82rVrrxgYGF6RFUR8fHyZbGxsD7AZLiEhUSAiIrJSUlIyjOw4uHnz5gVHR0d1bC7/8+eP5d+/f8P+/PmjS1Ekr1ix4hcp6ploXVwPfQuwJlMmJiYBLS0tIVIMev36NRvRFnz48OHohw8fhkYQjQKCAAChiL6Pj/LM2QAAAABJRU5ErkJggg==&quot;;
+    var newWindowImgSrcBase64 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH4wUVFzAHq2j99AAAAV9JREFUSMdjYKAxYCRHk5ubG9+1a9fm/v//H6cadnb2G/fu3atlIceC379/c3z9+jUEn5q/f/8eYWBgYECxQE5OroqA2Y8ePXq0hJWV9Qc3N/caZB8wMjJKff361QpvEAkKCv4nYMGh9+/f26MLamhoyLx9+3b/nz9/VJCC6MiLFy9sWXCE3xlGRsZvWKQu4DOciYnpCzc396HPnz97weRxWRD/8OHDa4TiAt1wfn5+z79//zoxMDDALWAiN/lhM/zevXtH0NUx0dJwsiwgxXCccUCJ4dzc3DP+//+/gZ2d/duLFy9Is+Djx4+rCbn82rVrrxgYGF6RFUR8fHyZbGxsD7AZLiEhUSAiIrJSUlIyjOw4uHnz5gVHR0d1bC7/8+eP5d+/f8P+/PmjS1Ekr1ix4hcp6ploXVwPfQuwJlMmJiYBLS0tIVIMev36NRvRFnz48OHohw8fhkYQjQKCAAChiL6Pj/LM2QAAAABJRU5ErkJggg==";
 
 // Actual mapping section; Specify a function to be called later that 
 // assembles the correct JS components based on what the user specified in the 
@@ -37,7 +48,7 @@ Wish me luck.&lt;/p&gt;
 
     function _getCenter(){
         var defaultCenter = [0,0];
-        if(&quot;center&quot; in tagInputArg){
+        if("center" in tagInputArg){
             return tagInputArg.center;
         } else {
             return defaultCenter;
@@ -46,7 +57,7 @@ Wish me luck.&lt;/p&gt;
 
     function _getZoom(){
         var defaultZoom = 1;
-        if(&quot;zoom&quot; in tagInputArg){
+        if("zoom" in tagInputArg){
             return tagInputArg.zoom
         } else {
             return defaultZoom;
@@ -54,8 +65,8 @@ Wish me luck.&lt;/p&gt;
     }
 
     function _getProviderBasemap(){
-        var defaultProviderBasemap = &quot;OpenStreetMap.Mapnik&quot;;
-        if(&quot;providerBasemap&quot; in tagInputArg){
+        var defaultProviderBasemap = "OpenStreetMap.Mapnik";
+        if("providerBasemap" in tagInputArg){
             return tagInputArg.providerBasemap;
         } else {
             return defaultProviderBasemap;
@@ -66,12 +77,12 @@ Wish me luck.&lt;/p&gt;
     function _addMarkerToMap(leafletItem, map){
         var m = leafletItem.value;
         var result = L.marker([m.latitude, m.longitude]).addTo(map);
-        var potentialPopup = &quot;&quot;;
+        var potentialPopup = "";
         if('popupContent' in m){
                 potentialPopup += m.popupContent;}
         if('href' in m){
-            potentialPopup += '&lt;a href=&quot;' + m.href + '&quot;&gt;' + 
-                '&lt;img src=&quot;' + newWindowImgSrcBase64 + '&quot;&gt;&lt;/img&gt;&lt;/a&gt;';}
+            potentialPopup += '<a href="' + m.href + '">' + 
+                '<img src="' + newWindowImgSrcBase64 + '"></img></a>';}
         if(potentialPopup){
             result.bindPopup(potentialPopup);}
         if(!('center' in tagInputArg)){
@@ -81,28 +92,28 @@ Wish me luck.&lt;/p&gt;
     }
 
     function _onEachFeature(feature, layer){
-        var potentialPopup = &quot;&quot;
-        if(feature.properties &amp;&amp; feature.properties.popupContent){
+        var potentialPopup = ""
+        if(feature.properties && feature.properties.popupContent){
             potentialPopup += feature.properties.popupContent;
         }
-        if(feature.properties &amp;&amp; feature.properties.href){
+        if(feature.properties && feature.properties.href){
             potentialPopup += 
-                '&lt;a href=&quot;' + feature.properties.href + '&quot;&gt;' + 
-                    '&lt;img src=&quot;' + newWindowImgSrcBase64 + '&quot;&gt;&lt;/img&gt;&lt;/a&gt;';}
+                '<a href="' + feature.properties.href + '">' + 
+                    '<img src="' + newWindowImgSrcBase64 + '"></img></a>';}
         if(potentialPopup){
             layer.bindPopup(potentialPopup);
         }
     }
 
     function _addGeoJSONToMap(leafletItem, map){
-        if(typeof leafletItem.value === &quot;string&quot;){
-            fetch(leafletItem.value).then((resp) =&gt; {
+        if(typeof leafletItem.value === "string"){
+            fetch(leafletItem.value).then((resp) => {
                 return resp.json();
-            }).then((data) =&gt; {
+            }).then((data) => {
                 leafletItem.value = data;
                 _addGeoJSONObjToMap(leafletItem, map);
-            }).catch((err) =&gt; {
-                console.log(&quot;Encountered err w/ geojson, attempting to fix..&quot;);
+            }).catch((err) => {
+                console.log("Encountered err w/ geojson, attempting to fix..");
                 console.log(err);
                 _addGeoJSONObjToMap(leafletItem, map);
             });
@@ -116,12 +127,12 @@ Wish me luck.&lt;/p&gt;
             onEachFeature: _onEachFeature 
         });
         layers = geojson.getLayers();
-        for(var i=0; i&lt;layers.length; i++){
+        for(var i=0; i<layers.length; i++){
             try{
                 var geom = layers[i].feature.geometry;
                 if(!('center' in tagInputArg)){
                     // If the user didn't specify a center, infer from geojson
-                    //console.log(&quot;panning to &quot; + geom.coordinates);
+                    //console.log("panning to " + geom.coordinates);
                     map.panTo(new L.LatLng(geom.coordinates[1],
                                            geom.coordinates[0]));
                 }
@@ -134,37 +145,37 @@ Wish me luck.&lt;/p&gt;
 
     function _processLeafletItem(leafletItem, map){
         switch(leafletItem.type){
-            case &quot;LeafletMarker&quot;:
+            case "LeafletMarker":
                 _addMarkerToMap(leafletItem, map);
                 break;
-            case &quot;LeafletGeoJSON&quot;:
+            case "LeafletGeoJSON":
                 _addGeoJSONToMap(leafletItem, map);
                 break;
             case undefined:
                 break; 
             default:
-                console.log(&quot;Couldn't add item &quot; + leafletItem.id);
+                console.log("Couldn't add item " + leafletItem.id);
                 break;
         }
     }
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log(&quot;Creating map 5ac477f9cb48ba7ce302bba1bc9dbcba with these args:&quot;);
+        console.log("Creating map 55aef2f2c6d72e1deecd85b06b97f6cb with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
         var map = L.map(mapEl.id, 
             {worldCopyJump: true}).setView(_getCenter(), _getZoom());
         L.tileLayer.provider(_getProviderBasemap()).addTo(map);
-        if(&quot;esriBasemap&quot; in tagInputArg){
+        if("esriBasemap" in tagInputArg){
             L.esri.basemapLayer(tagInputArg.esriBasemap).addTo(map);
         }
 
         //process each Leaflet Item passed in between the block tag middle
-        for(var i=0; i&lt;blockLeafletItems.length; i++){
+        for(var i=0; i<blockLeafletItems.length; i++){
             var leafletItem = blockLeafletItems[i];
-            console.log(&quot;Adding leaflet item &quot; + leafletItem.id + &quot;:&quot;);
+            console.log("Adding leaflet item " + leafletItem.id + ":");
             console.log(leafletItem);
             _processLeafletItem(leafletItem, map);
         }
@@ -180,7 +191,7 @@ Wish me luck.&lt;/p&gt;
         if(window.onload){
             prevOnLoad = window.onload;
         }
-        window.onload = () =&gt; {
+        window.onload = () => {
             createMap();
             if(prevOnLoad){
                 prevOnLoad();
@@ -188,16 +199,16 @@ Wish me luck.&lt;/p&gt;
         }
     }
 
-    var leafletCssId = &quot;leaflet-css-head&quot;;
-    var leafletJsId = &quot;leaflet-js-head&quot;;
-    var esriLeafletJsId = &quot;esri-leaflet-js-head&quot;;
-    var leafletProvidersJsId = &quot;leaflet-providers-js-head&quot;;
+    var leafletCssId = "leaflet-css-head";
+    var leafletJsId = "leaflet-js-head";
+    var esriLeafletJsId = "esri-leaflet-js-head";
+    var leafletProvidersJsId = "leaflet-providers-js-head";
 
     // Add the leaflet CSS first, don't worry about when it loads
-    var leafletCssEl = document.createElement(&quot;link&quot;);
+    var leafletCssEl = document.createElement("link");
     leafletCssEl.id = leafletCssId;
-    leafletCssEl.rel = &quot;stylesheet&quot;;
-    leafletCssEl.href = leafletCdn + &quot;leaflet.css&quot;;
+    leafletCssEl.rel = "stylesheet";
+    leafletCssEl.href = leafletCdn + "leaflet.css";
     if(!document.getElementById(leafletCssEl.id)){
         document.head.appendChild(leafletCssEl);
     }
@@ -213,22 +224,22 @@ Wish me luck.&lt;/p&gt;
     }
 
     // Load the main leaflet.js code, wait for it to load
-    var leafletJsEl = document.createElement(&quot;script&quot;);
+    var leafletJsEl = document.createElement("script");
     leafletJsEl.id = leafletJsId;
-    leafletJsEl.onload = () =&gt; {
+    leafletJsEl.onload = () => {
         //After loaded, load the esri-leaflet.js code, wait for it to load
-        var esriEl = document.createElement(&quot;script&quot;);
+        var esriEl = document.createElement("script");
         esriEl.id = esriLeafletJsId;
-        esriEl.onload = () =&gt; {
-            //After loaded, add the inline leaflet-providers &lt;script&gt;
-            provEl = document.createElement(&quot;script&quot;);
+        esriEl.onload = () => {
+            //After loaded, add the inline leaflet-providers <script>
+            provEl = document.createElement("script");
             provEl.id = leafletProvidersJsId;
             provEl.innerHTML = `//Taken from https://github.com/leaflet-extras/leaflet-providers
 (function (root, factory) {
-	if (typeof define === 'function' &amp;&amp; define.amd) {
+	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
 		define(['leaflet'], factory);
-	} else if (typeof modules === 'object' &amp;&amp; module.exports) {
+	} else if (typeof modules === 'object' && module.exports) {
 		// define a Common JS module that relies on 'leaflet'
 		module.exports = factory(require('leaflet'));
 	} else {
@@ -257,7 +268,7 @@ Wish me luck.&lt;/p&gt;
 			};
 
 			// overwrite values in provider from variant.
-			if (variantName &amp;&amp; 'variants' in providers[providerName]) {
+			if (variantName && 'variants' in providers[providerName]) {
 				if (!(variantName in providers[providerName].variants)) {
 					throw 'No such variant of ' + providerName + ' (' + variantName + ')';
 				}
@@ -307,7 +318,7 @@ Wish me luck.&lt;/p&gt;
 			options: {
 				maxZoom: 19,
 				attribution:
-					'&amp;copy; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors'
+					'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 			},
 			variants: {
 				Mapnik: {},
@@ -328,7 +339,7 @@ Wish me luck.&lt;/p&gt;
 					url: 'https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png',
 					options: {
 						maxZoom: 20,
-						attribution: '&amp;copy; Openstreetmap France | {attribution.OpenStreetMap}'
+						attribution: '&copy; Openstreetmap France | {attribution.OpenStreetMap}'
 					}
 				},
 				HOT: {
@@ -336,14 +347,14 @@ Wish me luck.&lt;/p&gt;
 					options: {
 						attribution:
 							'{attribution.OpenStreetMap}, ' +
-							'Tiles style by &lt;a href=&quot;https://www.hotosm.org/&quot; target=&quot;_blank&quot;&gt;Humanitarian OpenStreetMap Team&lt;/a&gt; ' +
-							'hosted by &lt;a href=&quot;https://openstreetmap.fr/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap France&lt;/a&gt;'
+							'Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> ' +
+							'hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
 					}
 				},
 				BZH: {
 					url: 'https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png',
 					options: {
-						attribution: '{attribution.OpenStreetMap}, Tiles courtesy of &lt;a href=&quot;http://www.openstreetmap.bzh/&quot; target=&quot;_blank&quot;&gt;Breton OpenStreetMap Team&lt;/a&gt;',
+						attribution: '{attribution.OpenStreetMap}, Tiles courtesy of <a href="http://www.openstreetmap.bzh/" target="_blank">Breton OpenStreetMap Team</a>',
 						bounds: [[46.2, -5.5], [50, 0.7]]
 					}
 				}
@@ -352,51 +363,51 @@ Wish me luck.&lt;/p&gt;
 		OpenSeaMap: {
 			url: 'https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png',
 			options: {
-				attribution: 'Map data: &amp;copy; &lt;a href=&quot;http://www.openseamap.org&quot;&gt;OpenSeaMap&lt;/a&gt; contributors'
+				attribution: 'Map data: &copy; <a href="http://www.openseamap.org">OpenSeaMap</a> contributors'
 			}
 		},
 		OpenPtMap: {
 			url: 'http://openptmap.org/tiles/{z}/{x}/{y}.png',
 			options: {
 				maxZoom: 17,
-				attribution: 'Map data: &amp;copy; &lt;a href=&quot;http://www.openptmap.org&quot;&gt;OpenPtMap&lt;/a&gt; contributors'
+				attribution: 'Map data: &copy; <a href="http://www.openptmap.org">OpenPtMap</a> contributors'
 			}
 		},
 		OpenTopoMap: {
 			url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
 			options: {
 				maxZoom: 17,
-				attribution: 'Map data: {attribution.OpenStreetMap}, &lt;a href=&quot;http://viewfinderpanoramas.org&quot;&gt;SRTM&lt;/a&gt; | Map style: &amp;copy; &lt;a href=&quot;https://opentopomap.org&quot;&gt;OpenTopoMap&lt;/a&gt; (&lt;a href=&quot;https://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;CC-BY-SA&lt;/a&gt;)'
+				attribution: 'Map data: {attribution.OpenStreetMap}, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 			}
 		},
 		OpenRailwayMap: {
 			url: 'https://{s}.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png',
 			options: {
 				maxZoom: 19,
-				attribution: 'Map data: {attribution.OpenStreetMap} | Map style: &amp;copy; &lt;a href=&quot;https://www.OpenRailwayMap.org&quot;&gt;OpenRailwayMap&lt;/a&gt; (&lt;a href=&quot;https://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;CC-BY-SA&lt;/a&gt;)'
+				attribution: 'Map data: {attribution.OpenStreetMap} | Map style: &copy; <a href="https://www.OpenRailwayMap.org">OpenRailwayMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 			}
 		},
 		OpenFireMap: {
 			url: 'http://openfiremap.org/hytiles/{z}/{x}/{y}.png',
 			options: {
 				maxZoom: 19,
-				attribution: 'Map data: {attribution.OpenStreetMap} | Map style: &amp;copy; &lt;a href=&quot;http://www.openfiremap.org&quot;&gt;OpenFireMap&lt;/a&gt; (&lt;a href=&quot;https://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;CC-BY-SA&lt;/a&gt;)'
+				attribution: 'Map data: {attribution.OpenStreetMap} | Map style: &copy; <a href="http://www.openfiremap.org">OpenFireMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 			}
 		},
 		SafeCast: {
 			url: 'https://s3.amazonaws.com/te512.safecast.org/{z}/{x}/{y}.png',
 			options: {
 				maxZoom: 16,
-				attribution: 'Map data: {attribution.OpenStreetMap} | Map style: &amp;copy; &lt;a href=&quot;https://blog.safecast.org/about/&quot;&gt;SafeCast&lt;/a&gt; (&lt;a href=&quot;https://creativecommons.org/licenses/by-sa/3.0/&quot;&gt;CC-BY-SA&lt;/a&gt;)'
+				attribution: 'Map data: {attribution.OpenStreetMap} | Map style: &copy; <a href="https://blog.safecast.org/about/">SafeCast</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 			}
 		},
 		Thunderforest: {
 			url: 'https://{s}.tile.thunderforest.com/{variant}/{z}/{x}/{y}.png?apikey={apikey}',
 			options: {
 				attribution:
-					'&amp;copy; &lt;a href=&quot;http://www.thunderforest.com/&quot;&gt;Thunderforest&lt;/a&gt;, {attribution.OpenStreetMap}',
+					'&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, {attribution.OpenStreetMap}',
 				variant: 'cycle',
-				apikey: '&lt;insert your api key here&gt;',
+				apikey: '<insert your api key here>',
 				maxZoom: 22
 			},
 			variants: {
@@ -426,7 +437,7 @@ Wish me luck.&lt;/p&gt;
 			options: {
 				maxZoom: 19,
 				variant: 'roads',
-				attribution: 'Imagery from &lt;a href=&quot;http://giscience.uni-hd.de/&quot;&gt;GIScience Research Group @ University of Heidelberg&lt;/a&gt; | Map data '
+				attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> | Map data '
 			},
 			variants: {
 				Roads: {
@@ -453,14 +464,14 @@ Wish me luck.&lt;/p&gt;
 						variant: 'asterc',
 						maxZoom: 18,
 						minZoom: 13,
-						attribution: '{attribution.OpenMapSurfer} &lt;a href=&quot;https://lpdaac.usgs.gov/products/aster_policies&quot;&gt;ASTER GDEM&lt;/a&gt;'
+						attribution: '{attribution.OpenMapSurfer} <a href="https://lpdaac.usgs.gov/products/aster_policies">ASTER GDEM</a>'
 					}
 				},
 				Hillshade: {
 					options: {
 						variant: 'asterh',
 						maxZoom: 18,
-						attribution: '{attribution.OpenMapSurfer} &lt;a href=&quot;https://lpdaac.usgs.gov/products/aster_policies&quot;&gt;ASTER GDEM&lt;/a&gt;, &lt;a href=&quot;http://srtm.csi.cgiar.org/&quot;&gt;SRTM&lt;/a&gt;'
+						attribution: '{attribution.OpenMapSurfer} <a href="https://lpdaac.usgs.gov/products/aster_policies">ASTER GDEM</a>, <a href="http://srtm.csi.cgiar.org/">SRTM</a>'
 					}
 				},
 				ElementsAtRisk: {
@@ -476,7 +487,7 @@ Wish me luck.&lt;/p&gt;
 			options: {
 				maxZoom: 18,
 				variant: 'full',
-				attribution: 'Tiles courtesy of &lt;a href=&quot;http://openstreetmap.se/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap Sweden&lt;/a&gt; &amp;mdash; Map data {attribution.OpenStreetMap}'
+				attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data {attribution.OpenStreetMap}'
 			},
 			variants: {
 				Full: 'full',
@@ -488,20 +499,20 @@ Wish me luck.&lt;/p&gt;
 			url: 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}{r}.png?access_token={accessToken}',
 			options: {
 				attribution:
-					'&lt;a href=&quot;https://www.mapbox.com/about/maps/&quot; target=&quot;_blank&quot;&gt;&amp;copy; Mapbox&lt;/a&gt; ' +
+					'<a href="https://www.mapbox.com/about/maps/" target="_blank">&copy; Mapbox</a> ' +
 					'{attribution.OpenStreetMap} ' +
-					'&lt;a href=&quot;https://www.mapbox.com/map-feedback/&quot; target=&quot;_blank&quot;&gt;Improve this map&lt;/a&gt;',
+					'<a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>',
 				subdomains: 'abcd',
 				id: 'mapbox.streets',
-				accessToken: '&lt;insert your access token here&gt;',
+				accessToken: '<insert your access token here>',
 			}
 		},
 		Stamen: {
 			url: 'https://stamen-tiles-{s}.a.ssl.fastly.net/{variant}/{z}/{x}/{y}{r}.{ext}',
 			options: {
 				attribution:
-					'Map tiles by &lt;a href=&quot;http://stamen.com&quot;&gt;Stamen Design&lt;/a&gt;, ' +
-					'&lt;a href=&quot;http://creativecommons.org/licenses/by/3.0&quot;&gt;CC BY 3.0&lt;/a&gt; &amp;mdash; ' +
+					'Map tiles by <a href="http://stamen.com">Stamen Design</a>, ' +
+					'<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; ' +
 					'Map data {attribution.OpenStreetMap}',
 				subdomains: 'abcd',
 				minZoom: 0,
@@ -560,13 +571,13 @@ Wish me luck.&lt;/p&gt;
 			url: 'https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}',
 			options: {
 				variant: 'World_Street_Map',
-				attribution: 'Tiles &amp;copy; Esri'
+				attribution: 'Tiles &copy; Esri'
 			},
 			variants: {
 				WorldStreetMap: {
 					options: {
 						attribution:
-							'{attribution.Esri} &amp;mdash; ' +
+							'{attribution.Esri} &mdash; ' +
 							'Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
 					}
 				},
@@ -575,14 +586,14 @@ Wish me luck.&lt;/p&gt;
 						variant: 'Specialty/DeLorme_World_Base_Map',
 						minZoom: 1,
 						maxZoom: 11,
-						attribution: '{attribution.Esri} &amp;mdash; Copyright: &amp;copy;2012 DeLorme'
+						attribution: '{attribution.Esri} &mdash; Copyright: &copy;2012 DeLorme'
 					}
 				},
 				WorldTopoMap: {
 					options: {
 						variant: 'World_Topo_Map',
 						attribution:
-							'{attribution.Esri} &amp;mdash; ' +
+							'{attribution.Esri} &mdash; ' +
 							'Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
 					}
 				},
@@ -590,7 +601,7 @@ Wish me luck.&lt;/p&gt;
 					options: {
 						variant: 'World_Imagery',
 						attribution:
-							'{attribution.Esri} &amp;mdash; ' +
+							'{attribution.Esri} &mdash; ' +
 							'Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 					}
 				},
@@ -599,7 +610,7 @@ Wish me luck.&lt;/p&gt;
 						variant: 'World_Terrain_Base',
 						maxZoom: 13,
 						attribution:
-							'{attribution.Esri} &amp;mdash; ' +
+							'{attribution.Esri} &mdash; ' +
 							'Source: USGS, Esri, TANA, DeLorme, and NPS'
 					}
 				},
@@ -607,35 +618,35 @@ Wish me luck.&lt;/p&gt;
 					options: {
 						variant: 'World_Shaded_Relief',
 						maxZoom: 13,
-						attribution: '{attribution.Esri} &amp;mdash; Source: Esri'
+						attribution: '{attribution.Esri} &mdash; Source: Esri'
 					}
 				},
 				WorldPhysical: {
 					options: {
 						variant: 'World_Physical_Map',
 						maxZoom: 8,
-						attribution: '{attribution.Esri} &amp;mdash; Source: US National Park Service'
+						attribution: '{attribution.Esri} &mdash; Source: US National Park Service'
 					}
 				},
 				OceanBasemap: {
 					options: {
 						variant: 'Ocean_Basemap',
 						maxZoom: 13,
-						attribution: '{attribution.Esri} &amp;mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri'
+						attribution: '{attribution.Esri} &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri'
 					}
 				},
 				NatGeoWorldMap: {
 					options: {
 						variant: 'NatGeo_World_Map',
 						maxZoom: 16,
-						attribution: '{attribution.Esri} &amp;mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC'
+						attribution: '{attribution.Esri} &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC'
 					}
 				},
 				WorldGrayCanvas: {
 					options: {
 						variant: 'Canvas/World_Light_Gray_Base',
 						maxZoom: 16,
-						attribution: '{attribution.Esri} &amp;mdash; Esri, DeLorme, NAVTEQ'
+						attribution: '{attribution.Esri} &mdash; Esri, DeLorme, NAVTEQ'
 					}
 				}
 			}
@@ -644,8 +655,8 @@ Wish me luck.&lt;/p&gt;
 			url: 'http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png?appid={apiKey}',
 			options: {
 				maxZoom: 19,
-				attribution: 'Map data &amp;copy; &lt;a href=&quot;http://openweathermap.org&quot;&gt;OpenWeatherMap&lt;/a&gt;',
-				apiKey:'&lt;insert your api key here&gt;',
+				attribution: 'Map data &copy; <a href="http://openweathermap.org">OpenWeatherMap</a>',
+				apiKey:'<insert your api key here>',
 				opacity: 0.5
 			},
 			variants: {
@@ -671,14 +682,14 @@ Wish me luck.&lt;/p&gt;
 			url:
 				'https://{s}.{base}.maps.api.here.com/maptile/2.1/' +
 				'{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?' +
-				'app_id={app_id}&amp;app_code={app_code}&amp;lg={language}',
+				'app_id={app_id}&app_code={app_code}&lg={language}',
 			options: {
 				attribution:
-					'Map &amp;copy; 1987-' + new Date().getFullYear() + ' &lt;a href=&quot;http://developer.here.com&quot;&gt;HERE&lt;/a&gt;',
+					'Map &copy; 1987-' + new Date().getFullYear() + ' <a href="http://developer.here.com">HERE</a>',
 				subdomains: '1234',
 				mapID: 'newest',
-				'app_id': '&lt;insert your app_id here&gt;',
-				'app_code': '&lt;insert your app_code here&gt;',
+				'app_id': '<insert your app_id here>',
+				'app_code': '<insert your app_code here>',
 				base: 'base',
 				variant: 'normal.day',
 				maxZoom: 20,
@@ -775,20 +786,20 @@ Wish me luck.&lt;/p&gt;
 				subdomains: '1234',
 				bounds: [[47.204642, 15.996093], [49.830896, 22.576904]],
 				attribution:
-					'{attribution.OpenStreetMap}, vizualization CC-By-SA 2.0 &lt;a href=&quot;http://freemap.sk&quot;&gt;Freemap.sk&lt;/a&gt;'
+					'{attribution.OpenStreetMap}, vizualization CC-By-SA 2.0 <a href="http://freemap.sk">Freemap.sk</a>'
 			}
 		},
 		MtbMap: {
 			url: 'http://tile.mtbmap.cz/mtbmap_tiles/{z}/{x}/{y}.png',
 			options: {
 				attribution:
-					'{attribution.OpenStreetMap} &amp;amp; USGS'
+					'{attribution.OpenStreetMap} &amp; USGS'
 			}
 		},
 		CartoDB: {
 			url: 'https://{s}.basemaps.cartocdn.com/{variant}/{z}/{x}/{y}{r}.png',
 			options: {
-				attribution: '{attribution.OpenStreetMap} &amp;copy; &lt;a href=&quot;https://carto.com/attributions&quot;&gt;CARTO&lt;/a&gt;',
+				attribution: '{attribution.OpenStreetMap} &copy; <a href="https://carto.com/attributions">CARTO</a>',
 				subdomains: 'abcd',
 				maxZoom: 19,
 				variant: 'light_all'
@@ -827,7 +838,7 @@ Wish me luck.&lt;/p&gt;
 			url: 'https://maps{s}.wien.gv.at/basemap/{variant}/normal/google3857/{z}/{y}/{x}.{format}',
 			options: {
 				maxZoom: 19,
-				attribution: 'Datenquelle: &lt;a href=&quot;https://www.basemap.at&quot;&gt;basemap.at&lt;/a&gt;',
+				attribution: 'Datenquelle: <a href="https://www.basemap.at">basemap.at</a>',
 				subdomains: ['', '1', '2', '3', '4'],
 				format: 'png',
 				bounds: [[46.358770, 8.782379], [49.037872, 17.189532]],
@@ -863,7 +874,7 @@ Wish me luck.&lt;/p&gt;
 				minZoom: 6,
 				maxZoom: 19,
 				bounds: [[50.5, 3.25], [54, 7.6]],
-				attribution: 'Kaartgegevens &amp;copy; &lt;a href=&quot;kadaster.nl&quot;&gt;Kadaster&lt;/a&gt;'
+				attribution: 'Kaartgegevens &copy; <a href="kadaster.nl">Kadaster</a>'
 			},
 			variants: {
 				'standaard': 'brtachtergrondkaart',
@@ -879,7 +890,7 @@ Wish me luck.&lt;/p&gt;
 			options: {
 				attribution:
 					'Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System ' +
-					'(&lt;a href=&quot;https://earthdata.nasa.gov&quot;&gt;ESDIS&lt;/a&gt;) with funding provided by NASA/HQ.',
+					'(<a href="https://earthdata.nasa.gov">ESDIS</a>) with funding provided by NASA/HQ.',
 				bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
 				minZoom: 1,
 				maxZoom: 9,
@@ -941,7 +952,7 @@ Wish me luck.&lt;/p&gt;
 			//  z12-18 - one inch (1:63360)
 			url: 'https://nls-{s}.tileserver.com/nls/{z}/{x}/{y}.jpg',
 			options: {
-				attribution: '&lt;a href=&quot;http://geo.nls.uk/maps/&quot;&gt;National Library of Scotland Historic Maps&lt;/a&gt;',
+				attribution: '<a href="http://geo.nls.uk/maps/">National Library of Scotland Historic Maps</a>',
 				bounds: [[49.6, -12], [61.7, 3]],
 				minZoom: 1,
 				maxZoom: 18,
@@ -954,7 +965,7 @@ Wish me luck.&lt;/p&gt;
 			// Includes tools for data journalists, bloggers and community activists.
 			url: 'http://www.justicemap.org/tile/{size}/{variant}/{z}/{x}/{y}.png',
 			options: {
-				attribution: '&lt;a href=&quot;http://www.justicemap.org/terms.php&quot;&gt;Justice Map&lt;/a&gt;',
+				attribution: '<a href="http://www.justicemap.org/terms.php">Justice Map</a>',
 				// one of 'county', 'tract', 'block'
 				size: 'county',
 				// Bounds for USA, including Alaska and Hawaii
@@ -975,15 +986,15 @@ Wish me luck.&lt;/p&gt;
 		Wikimedia: {
 			url: 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png',
 			options: {
-				attribution: '&lt;a href=&quot;https://wikimediafoundation.org/wiki/Maps_Terms_of_Use&quot;&gt;Wikimedia&lt;/a&gt;',
+				attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
 				minZoom: 1,
 				maxZoom: 19
 			}
 		},
 		GeoportailFrance: {
-			url: 'https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&amp;SERVICE=WMTS&amp;VERSION=1.0.0&amp;STYLE={style}&amp;TILEMATRIXSET=PM&amp;FORMAT={format}&amp;LAYER={variant}&amp;TILEMATRIX={z}&amp;TILEROW={y}&amp;TILECOL={x}',
+			url: 'https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}',
 			options: {
-				attribution: '&lt;a target=&quot;_blank&quot; href=&quot;https://www.geoportail.gouv.fr/&quot;&gt;Geoportail France&lt;/a&gt;',
+				attribution: '<a target="_blank" href="https://www.geoportail.gouv.fr/">Geoportail France</a>',
 				bounds: [[-75, -180], [81, 180]],
 				minZoom: 2,
 				maxZoom: 18,
@@ -1020,7 +1031,7 @@ Wish me luck.&lt;/p&gt;
 				minZoom: 11,
 				maxZoom: 18,
 				bounds: [[1.56073, 104.11475], [1.16, 103.502]],
-				attribution: '&lt;img src=&quot;https://docs.onemap.sg/maps/images/oneMap64-01.png&quot; style=&quot;height:20px;width:20px;&quot;/&gt; New OneMap | Map data &amp;copy; contributors, &lt;a href=&quot;http://SLA.gov.sg&quot;&gt;Singapore Land Authority&lt;/a&gt;'
+				attribution: '<img src="https://docs.onemap.sg/maps/images/oneMap64-01.png" style="height:20px;width:20px;"/> New OneMap | Map data &copy; contributors, <a href="http://SLA.gov.sg">Singapore Land Authority</a>'
 			},
 			variants: {
 				Default: 'Default',
@@ -1044,74 +1055,83 @@ Wish me luck.&lt;/p&gt;
             }
             _createMap();
             }
-        esriEl.src = esriLeafletCdn + &quot;esri-leaflet.js&quot;;
+        esriEl.src = esriLeafletCdn + "esri-leaflet.js";
         addToHeadIfNotLoaded(esriEl);
         };
-    leafletJsEl.src = leafletCdn + &quot;leaflet.js&quot;;
+    leafletJsEl.src = leafletCdn + "leaflet.js";
     addToHeadIfNotLoaded(leafletJsEl);
 })();
-&lt;/script&gt;</content><author><name></name></author><summary type="html">Map Experiment with Leaflet</summary></entry><entry><title type="html">Birds</title><link href="http://localhost:4000/2021/10/25/birds.html" rel="alternate" type="text/html" title="Birds" /><published>2021-10-25T00:00:00-04:00</published><updated>2021-10-25T00:00:00-04:00</updated><id>http://localhost:4000/2021/10/25/birds</id><content type="html" xml:base="http://localhost:4000/2021/10/25/birds.html">&lt;p&gt;They are ubiquitous in the temperate climes. An everyday sighting, yet often ignored.
-Everyday, there are birds in your presence. You see birds daily.&lt;/p&gt;
+</script>
 
-&lt;p&gt;Birds are found on every continent.&lt;/p&gt;
+<p>Yea!! Partial success, a map with a pop-up marker. The correct map, but not a walk trace. (resolved)<br />
+I’ve been trying to add a “LineString” layer for days, literally, with no joy. So, I’ll keep reading and experimenting. It will come.</p>
 
-&lt;p&gt;A gentle twitter outside the window.
+<p>Double Yea!!. More success, and finally a trace of my walk/hike within the map. It’s embarassing to think of how long this has taken and how many websearches I’ve made in the effort (hint:over a week).</p>
+
+<p>This walk was through Russel Pond Campground in the White Mountains of New Hampshire. I was surveying the entire campground for suitable campsites for future visits.</p>
+
+<p>Also, I’d be remiss for not giving a thank you and shout-out to <a href="https://davidjvitale.com">David Vitale </a> for his amazing work on the <a href="https://davidjvitale.com/tech/jekyll-leaflet/"> jekyll-leaflet </a>plugin!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Map Experiment with Leaflet]]></summary></entry><entry><title type="html">Birds</title><link href="http://localhost:4000/2021/10/25/birds.html" rel="alternate" type="text/html" title="Birds" /><published>2021-10-25T00:00:00-04:00</published><updated>2021-10-25T00:00:00-04:00</updated><id>http://localhost:4000/2021/10/25/birds</id><content type="html" xml:base="http://localhost:4000/2021/10/25/birds.html"><![CDATA[<p>They are ubiquitous in the temperate climes. An everyday sighting, yet often ignored.
+Everyday, there are birds in your presence. You see birds daily.</p>
+
+<p>Birds are found on every continent.</p>
+
+<p>A gentle twitter outside the window.
 The burst of fluttering as a startled covey explodes away from the feeder.
-A piercing screech of a hawk through the forest. You hear birds daily.&lt;/p&gt;
+A piercing screech of a hawk through the forest. You hear birds daily.</p>
 
-&lt;p&gt;Birds are dazzling in their colors and varieties.&lt;/p&gt;
+<p>Birds are dazzling in their colors and varieties.</p>
 
-&lt;p&gt;Yet, the most amazing thing about most birds, is that they fly. They glide, they soar, they flap, they dive, they hover. Birds seemingly defy gravity. You are seldom inspired by this magnificence.&lt;/p&gt;
+<p>Yet, the most amazing thing about most birds, is that they fly. They glide, they soar, they flap, they dive, they hover. Birds seemingly defy gravity. You are seldom inspired by this magnificence.</p>
 
-&lt;p&gt;Still, there was a youthful day, when you laid on the warm spring grass and yearned with all your heart and dreamed of flying like a bird.&lt;/p&gt;
+<p>Still, there was a youthful day, when you laid on the warm spring grass and yearned with all your heart and dreamed of flying like a bird.</p>
 
-&lt;p&gt;That wonder is still existent, everyday and on every continent.&lt;/p&gt;</content><author><name></name></author><summary type="html">They are ubiquitous in the temperate climes. An everyday sighting, yet often ignored. Everyday, there are birds in your presence. You see birds daily.</summary></entry><entry><title type="html">Smiles</title><link href="http://localhost:4000/2021/08/15/Smiles.html" rel="alternate" type="text/html" title="Smiles" /><published>2021-08-15T00:00:00-04:00</published><updated>2021-08-15T00:00:00-04:00</updated><id>http://localhost:4000/2021/08/15/Smiles</id><content type="html" xml:base="http://localhost:4000/2021/08/15/Smiles.html">&lt;p&gt;Why not smile? Smiles are contagious, and multiply. There are at least 15 types of smiles. Babies are innate smilers, and a smile is  universally one of each humans first acts.&lt;/p&gt;
+<p>That wonder is still existent, everyday and on every continent.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[They are ubiquitous in the temperate climes. An everyday sighting, yet often ignored. Everyday, there are birds in your presence. You see birds daily.]]></summary></entry><entry><title type="html">Smiles</title><link href="http://localhost:4000/2021/08/15/Smiles.html" rel="alternate" type="text/html" title="Smiles" /><published>2021-08-15T00:00:00-04:00</published><updated>2021-08-15T00:00:00-04:00</updated><id>http://localhost:4000/2021/08/15/Smiles</id><content type="html" xml:base="http://localhost:4000/2021/08/15/Smiles.html"><![CDATA[<p>Why not smile? Smiles are contagious, and multiply. There are at least 15 types of smiles. Babies are innate smilers, and a smile is  universally one of each humans first acts.</p>
 
-&lt;p&gt;Smiles can be faked, even insincere. And then there’s the Duchenne smile, look it up. The real deal, it’s nearly unfakable and a genuine expression of inner emotion. Duchenne’s involve lips, cheeks and eye muscles which have no voluntary motor response.&lt;/p&gt;
+<p>Smiles can be faked, even insincere. And then there’s the Duchenne smile, look it up. The real deal, it’s nearly unfakable and a genuine expression of inner emotion. Duchenne’s involve lips, cheeks and eye muscles which have no voluntary motor response.</p>
 
-&lt;p&gt;Give a smile, smile at the universe, someone’s always watching, so why not Smile. Greet the new day with your best Duchenne.&lt;/p&gt;
+<p>Give a smile, smile at the universe, someone’s always watching, so why not Smile. Greet the new day with your best Duchenne.</p>
 
-&lt;blockquote&gt;
-  &lt;p&gt;Nothing left to do but smile, smile, smile.&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;Grateful Dead&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">Why not smile? Smiles are contagious, and multiply. There are at least 15 types of smiles. Babies are innate smilers, and a smile is universally one of each humans first acts.</summary></entry><entry><title type="html">Gratitude</title><link href="http://localhost:4000/2021/07/26/Gratitude.html" rel="alternate" type="text/html" title="Gratitude" /><published>2021-07-26T00:00:00-04:00</published><updated>2021-07-26T00:00:00-04:00</updated><id>http://localhost:4000/2021/07/26/Gratitude</id><content type="html" xml:base="http://localhost:4000/2021/07/26/Gratitude.html">&lt;h3 id=&quot;with-a-grateful-heart&quot;&gt;With a Grateful Heart&lt;/h3&gt;
+<blockquote>
+  <p>Nothing left to do but smile, smile, smile.</p>
+  <blockquote>
+    <p>Grateful Dead</p>
+  </blockquote>
+</blockquote>]]></content><author><name></name></author><summary type="html"><![CDATA[Why not smile? Smiles are contagious, and multiply. There are at least 15 types of smiles. Babies are innate smilers, and a smile is universally one of each humans first acts.]]></summary></entry><entry><title type="html">Gratitude</title><link href="http://localhost:4000/2021/07/26/Gratitude.html" rel="alternate" type="text/html" title="Gratitude" /><published>2021-07-26T00:00:00-04:00</published><updated>2021-07-26T00:00:00-04:00</updated><id>http://localhost:4000/2021/07/26/Gratitude</id><content type="html" xml:base="http://localhost:4000/2021/07/26/Gratitude.html"><![CDATA[<h3 id="with-a-grateful-heart">With a Grateful Heart</h3>
 
-&lt;p&gt;Each day is a blessing full of opportunities to be grateful. Everyday I awake to the dawn with a new breath. Every meal. A daily shower. The clothes on my back. With so many blessings and gifts, how can one ever feel inadequate?&lt;/p&gt;
+<p>Each day is a blessing full of opportunities to be grateful. Everyday I awake to the dawn with a new breath. Every meal. A daily shower. The clothes on my back. With so many blessings and gifts, how can one ever feel inadequate?</p>
 
-&lt;p&gt;To live my life with an attitude of gratitude.&lt;/p&gt;</content><author><name></name></author><summary type="html">With a Grateful Heart</summary></entry><entry><title type="html">Look a Rainbow!</title><link href="http://localhost:4000/2021/06/07/look-a-rainbow.html" rel="alternate" type="text/html" title="Look a Rainbow!" /><published>2021-06-07T00:00:00-04:00</published><updated>2021-06-07T00:00:00-04:00</updated><id>http://localhost:4000/2021/06/07/look-a-rainbow</id><content type="html" xml:base="http://localhost:4000/2021/06/07/look-a-rainbow.html">&lt;p&gt;Who doesn’t like a rainbow?&lt;/p&gt;
+<p>To live my life with an attitude of gratitude.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[With a Grateful Heart]]></summary></entry><entry><title type="html">Look a Rainbow!</title><link href="http://localhost:4000/2021/06/07/look-a-rainbow.html" rel="alternate" type="text/html" title="Look a Rainbow!" /><published>2021-06-07T00:00:00-04:00</published><updated>2021-06-07T00:00:00-04:00</updated><id>http://localhost:4000/2021/06/07/look-a-rainbow</id><content type="html" xml:base="http://localhost:4000/2021/06/07/look-a-rainbow.html"><![CDATA[<p>Who doesn’t like a rainbow?</p>
 
-&lt;p&gt;Seeing a rainbow brings a universal spark of joy. It brings an instant smile, a surge of pleasure.&lt;/p&gt;
+<p>Seeing a rainbow brings a universal spark of joy. It brings an instant smile, a surge of pleasure.</p>
 
-&lt;p&gt;Who can be ambivalent in one’s presence?&lt;/p&gt;
+<p>Who can be ambivalent in one’s presence?</p>
 
-&lt;p&gt;Rainbows are infrequent, but not rare.&lt;br /&gt;
-They are short lived, but not fleeting, often lasting for twenty plus minutes.&lt;/p&gt;
+<p>Rainbows are infrequent, but not rare.<br />
+They are short lived, but not fleeting, often lasting for twenty plus minutes.</p>
 
-&lt;p&gt;Rainbows are actually full circles. They are optical illusions.&lt;/p&gt;
+<p>Rainbows are actually full circles. They are optical illusions.</p>
 
-&lt;p&gt;If you see a double rainbow, in the outer one, the colors are reversed.&lt;/p&gt;
+<p>If you see a double rainbow, in the outer one, the colors are reversed.</p>
 
-&lt;p&gt;Are you a rainbow lover too?&lt;br /&gt;
-Try not to google them, for example:&lt;/p&gt;
+<p>Are you a rainbow lover too?<br />
+Try not to google them, for example:</p>
 
-&lt;p&gt;“Some cultures in Burma, consider Rainbows as demons sent to threaten children!”&lt;/p&gt;
+<p>“Some cultures in Burma, consider Rainbows as demons sent to threaten children!”</p>
 
-&lt;p&gt;Who knew?&lt;/p&gt;</content><author><name></name></author><summary type="html">Who doesn’t like a rainbow?</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2021/05/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-05-27T15:56:35-04:00</published><updated>2021-05-27T15:56:35-04:00</updated><id>http://localhost:4000/jekyll/update/2021/05/27/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/05/27/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<p>Who knew?</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Who doesn’t like a rainbow?]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2021/05/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-05-27T15:56:35-04:00</published><updated>2021-05-27T15:56:35-04:00</updated><id>http://localhost:4000/jekyll/update/2021/05/27/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/05/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+<p>Jekyll requires blog post files to be named according to the following format:</p>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
 
-&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+<p>Jekyll also offers powerful support for code snippets:</p>
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
