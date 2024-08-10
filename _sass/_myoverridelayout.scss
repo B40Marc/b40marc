@@ -8,20 +8,19 @@ body {
   background-color: #fafafa;
   }
 
-/**
+/*
 * Links
+*a {
+*  color: $brand-color;
+*&:visited {
+*  color: $brand-color;
+*  }
+*
+*  &:hover {
+*  color: green;
+*  }
+*}
 */
-a {
-  color: $brand-color;
-&:visited {
-  color: $brand-color;
-  }
-
-  &:hover {
-  color: green;
-  }
-}
-
 /* a workaround the main/index page has a h2 for the body title of Posts
  * the other pages, about, contact, the body title is h1
  * overiding h2 or h1 does not work because the /@include from sass _layout scss wipes it out
@@ -32,32 +31,34 @@ a {
   @include relative-font-size(2.625);
 }
 
-.post-link, .post-link:visited  {
+.post-link {
   color: $brand-color;
 }
 
+// overrides links/daily posts on main page i.e., Maps,Rainbows,Smiles,etc
 .post-link:hover {
-  color: $brand-color;
-  text-decoration: underline;
-  text-decoration-style: dotted;
+  color: $grey-color-dark;
+  text-decoration: underline dotted;
 }
 
-.site-nav .page-link {
- color: $text-color;
-}
-
-.site-nav .page-link:hover {
-  color: $brand-color;
-}
-
-
-// overrides .site-title in _sass/minima/_layout.scss which defaulted to a grey
-.site-title, .site-title:visited {
+// overrides ???
+ .page-link {
   color: $text-color; 
 }
 
+ .site-nav  :hover {
+  color: $brand-color; 
+}
+
+
+// overrides .site-title in _sass/minima/_layout.scss which defaulted to a grey i.e., Marc's Musings
+.site-title  {
+  color: $text-color; 
+}
+
+// overrides main name/home link in header i.e., "Marc's Musings"
 .site-title:hover {
-  color: $brand-color;
+  color: $brand-color; 
 }
 
 .site-header {

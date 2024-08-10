@@ -1,34 +1,34 @@
-I"�<h3 id="map-experiment-with-leaflet">Map Experiment with Leaflet</h3>
+I"�<h3 id="map-experiment-with-leaflet">Map Experiment with Leaflet</h3>
 
 <p>My effort to start publishing maps of my walks and hikes online.
 Leaflet thru Github pages on Jekyll. 
 Wish me luck.</p>
 
-<div id="leaflet-map-29571a58d766dec4f2434ff70cd44e7a" class="leaflet-map"></div>
+<div id="leaflet-map-046f0f8acc5ba1228e1a2b7858702e7e" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
     var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
 
     // Get tag input arguments & inside block object list
-    var tagInputArg = {"zoom" : 13 } ;
+    var tagInputArg = {"zoom" : 14 } ;
     var blockLeafletItems = [
 
-    {id: "9c5cc9f1de2512b92fd34be12147f027",
+    {id: "97a4d50c52ebe29d94adf66fe6659e1c",
               type: "LeafletMarker",
               value: {"latitude" : 44.010868,
                        "longitude" : -71.6491,
     "popupContent": "Russell Pond Campground"}
   },
 
-{id: "323eb30480bd6137761c26ad60173f50",
+{id: "e88c0acffdd7c6924b56e917224414bc",
               type: "LeafletGeoJSON",
-              value: "/assets/geojson/2024-07-20T17-45-28Z2.geojson" },
+              value: "/assets/geojson/russell_pond_cmpt.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-29571a58d766dec4f2434ff70cd44e7a";
+    var defaultMapElId = "leaflet-map-046f0f8acc5ba1228e1a2b7858702e7e";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -161,7 +161,7 @@ Wish me luck.</p>
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 29571a58d766dec4f2434ff70cd44e7a with these args:");
+        console.log("Creating map 046f0f8acc5ba1228e1a2b7858702e7e with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1064,10 +1064,11 @@ Wish me luck.</p>
 </script>
 
 <p>Yea!! Partial success, a map with a pop-up marker. The correct map, but not a walk trace. (resolved)<br />
-I’ve been trying to add a “LineString” layer for days, literally, with no joy. So, I’ll keep reading and experimenting. It will come.<br />
-Double Yea!!. More success, and finally a trace of my walk/hike within the map. It’s embarassing to think of how long this has taken and how many websearches I’ve made in the effort (hint:over a week).</p>
+I’ve been trying to add a “LineString” layer for days, literally, with no joy. So, I’ll keep reading and experimenting. It will come.</p>
+
+<p>Double Yea!!. More success, and finally a trace of my walk/hike within the map. It’s embarrassing to think of how long this has taken and how many web searches I’ve made in the effort (hint:over a week).</p>
 
 <p>This walk was through Russel Pond Campground in the White Mountains of New Hampshire. I was surveying the entire campground for suitable campsites for future visits.</p>
 
-<p>Also, I’d be remiss if not giving a thank you and shout-out to <a href="https://davidjvitale.com">David Vitale </a> for his amazing work on the <a href="https://davidjvitale.com/tech/jekyll-leaflet/"> jekyll-leaflet </a>plugin!</p>
+<p>Also, I’d be remiss for not giving a thank you and shout-out to <a href="https://davidjvitale.com">David Vitale</a> for his amazing work on the <a href="https://davidjvitale.com/tech/jekyll-leaflet/">jekyll-leaflet</a> plugin!</p>
 :ET

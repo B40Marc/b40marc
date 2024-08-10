@@ -31,17 +31,6 @@ header_pages:
  - books.md
  - contact.md
 
-# collections:
-#  :books
-#    output:true #this is a flag will create and (output) page for each item
-# 
-# defaults:  #The second block (defaults) says that all posts with the type authors (ie, anything in the authors collection) should use the author layout remove this comment(leave the "defaults:")
-#   -
-#    scope:
-#      path:""
-#      type: books
-#    values:
-#      layout: books
 # twitter_username: jekyllrb
 # github_username:  jekyll
 

@@ -276,25 +276,19 @@ table td { border: 1px solid #e8e8e8; }
 
 body { background-color: #fafafa; }
 
-/** Links */
-a { color: #2a7ae2; }
-
-a:visited { color: #2a7ae2; }
-
-a:hover { color: green; }
-
+/* Links a { color: $brand-color; &:visited { color: $brand-color; } &:hover { color: green; } } */
 /* a workaround the main/index page has a h2 for the body title of Posts the other pages, about, contact, the body title is h1 overiding h2 or h1 does not work because the /@include from sass _layout scss wipes it out with this adjustment they look the same. */
 .post-list-heading { font-size: 42px; }
 
-.post-link, .post-link:visited { color: #2a7ae2; }
+.post-link { color: #2a7ae2; }
 
-.post-link:hover { color: #2a7ae2; text-decoration: underline; text-decoration-style: dotted; }
+.post-link:hover { color: #424242; text-decoration: underline dotted; }
 
-.site-nav .page-link { color: #111; }
+.page-link { color: #111; }
 
-.site-nav .page-link:hover { color: #2a7ae2; }
+.site-nav :hover { color: #2a7ae2; }
 
-.site-title, .site-title:visited { color: #111; }
+.site-title { color: #111; }
 
 .site-title:hover { color: #2a7ae2; }
 

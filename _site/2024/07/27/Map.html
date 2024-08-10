@@ -58,31 +58,31 @@
 Leaflet thru Github pages on Jekyll. 
 Wish me luck.</p>
 
-<div id="leaflet-map-5e568513481c2209e6ecbaa7d7c315be" class="leaflet-map"></div>
+<div id="leaflet-map-901742def7920421cf6d6b9c24898897" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
     var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
 
     // Get tag input arguments & inside block object list
-    var tagInputArg = {"zoom" : 13 } ;
+    var tagInputArg = {"zoom" : 14 } ;
     var blockLeafletItems = [
 
-    {id: "70a7c39e8ff501ac154c3f282174c801",
+    {id: "5324d3fb6af35f2ed95a04a74b99aba6",
               type: "LeafletMarker",
               value: {"latitude" : 44.010868,
                        "longitude" : -71.6491,
     "popupContent": "Russell Pond Campground"}
   },
 
-{id: "d9d0c624facc741faa46754269d11d48",
+{id: "d2ef6522d70434b2508baf75bd29cb06",
               type: "LeafletGeoJSON",
-              value: "/assets/geojson/2024-07-20T17-45-28Z2.geojson" },
+              value: "/assets/geojson/russell_pond_cmpt.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-5e568513481c2209e6ecbaa7d7c315be";
+    var defaultMapElId = "leaflet-map-901742def7920421cf6d6b9c24898897";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -215,7 +215,7 @@ Wish me luck.</p>
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 5e568513481c2209e6ecbaa7d7c315be with these args:");
+        console.log("Creating map 901742def7920421cf6d6b9c24898897 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments

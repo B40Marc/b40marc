@@ -1,34 +1,32 @@
-I"��<h3 id="map-experiment-with-leaflet">Map Experiment with Leaflet</h3>
+I"�<h3 id="my-hike-of-mount-pierce">My Hike of Mount Pierce</h3>
 
-<p>My effort to start publishing maps of my walks and hikes online.
-Leaflet thru Github pages on Jekyll. 
-Wish me luck.</p>
-
-<div id="leaflet-map-3b83b8269a6b252e3fdb02c75a769875" class="leaflet-map"></div>
+<div id="leaflet-map-d8d47dcc43840fbcbf7b77fec1a72c28" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
     var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
 
     // Get tag input arguments & inside block object list
-    var tagInputArg = {"zoom" : 13 } ;
+    var tagInputArg = { "center": [44.224038, -71.389107],
+                 "zoom" : 13, 
+     "providerBasemap": "OpenTopoMap" } ;
     var blockLeafletItems = [
 
-    {id: "dd3f43c3d4ae772625dc1c949f3e218d",
+    {id: "d337c21e4c333b08e11d142566870b90",
               type: "LeafletMarker",
-              value: {"latitude" : 44.010868,
-                       "longitude" : -71.6491,
-    "popupContent": "Russell Pond Campground"}
+              value: {"latitude" : 44.226872,
+                       "longitude" : -71.365724,
+    "popupContent": "Mount Pierce ... 4312 ft"}
   },
 
-{id: "281338a857767220101d9f44e187b686",
+{id: "cdb29d03a9627b3a842b3eea5ef1ef8a",
               type: "LeafletGeoJSON",
-              value: "/assets/geojson/2024-07-20T17-45-28Z2.geojson" },
+              value: "/assets/geojson/Mount_Pierce_cmpt.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-3b83b8269a6b252e3fdb02c75a769875";
+    var defaultMapElId = "leaflet-map-d8d47dcc43840fbcbf7b77fec1a72c28";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -161,7 +159,7 @@ Wish me luck.</p>
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 3b83b8269a6b252e3fdb02c75a769875 with these args:");
+        console.log("Creating map d8d47dcc43840fbcbf7b77fec1a72c28 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1063,12 +1061,11 @@ Wish me luck.</p>
 })();
 </script>
 
-<p>Yea!! Partial success, a map with a pop-up marker. The correct map, but not a walk trace. (resolved)<br />
-I’ve been trying to add a “LineString” layer for days, literally, with no joy. So, I’ll keep reading and experimenting. It will come.</p>
+<p>Mount Pierce is the 27th highest of the 48 four thousand footers recognized by the Appalachian Mountain Club (in descending order from number one Mount Washington).</p>
 
-<p>Double Yea!!. More success, and finally a trace of my walk/hike within the map. It’s embarassing to think of how long this has taken and how many websearches I’ve made in the effort (hint:over a week).</p>
+<p>Mount Pierce is my 27th mountain climbed of the forty-eight. Mount Pierce is 4312 feet.</p>
 
-<p>This walk was through Russel Pond Campground in the White Mountains of New Hampshire. I was surveying the entire campground for suitable campsites for future visits.</p>
+<p>Today was a wonderfully beautiful day, in a week of not so wonderful weather. A minor cold front pushed in Tuesday night and dropped the heat, humidity, and rain from the forecast. Later, this week the remnants of tropical storm Debby will encroach. Not fun, being above 4000’ with lightning and thunderboomers. But, today was sunny, mid-60’s, high scattered clouds. Just a perfect hiking day!</p>
 
-<p>Also, I’d be remiss for not giving a thank you and shout-out to <a href="https://davidjvitale.com">David Vitale </a> for his amazing work on the <a href="https://davidjvitale.com/tech/jekyll-leaflet/"> jekyll-leaflet </a>plugin!</p>
+<p>Most of the hike was on the Crawford path, one of the oldest in the Whites. This was perhaps the busiest path I’ve encountered, save for Franconia ridge, on my hikes. A Wednesday, mid-week day and crossed about a hundred hikers. And then there were the trail runners, at least six of them. One guy passed me both ascent and decent, before I’d made 2/3rd of my climb. On the way down he was running pell-mell full speed like a jack rabbit. They are a different breed. I just don’t get it.</p>
 :ET
