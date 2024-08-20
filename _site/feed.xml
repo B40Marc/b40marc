@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-20T19:00:41-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marc’s Musings</title><subtitle>... Thought I'd something more to say ...</subtitle><entry><title type="html">Gallery Practice</title><link href="http://localhost:4000/2024/08/15/gallery-test.html" rel="alternate" type="text/html" title="Gallery Practice" /><published>2024-08-15T00:00:00-04:00</published><updated>2024-08-15T00:00:00-04:00</updated><id>http://localhost:4000/2024/08/15/gallery-test</id><content type="html" xml:base="http://localhost:4000/2024/08/15/gallery-test.html"><![CDATA[<!--more-->
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-20T19:12:15-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marc’s Musings</title><subtitle>... Thought I'd something more to say ...</subtitle><entry><title type="html">Gallery Practice</title><link href="http://localhost:4000/2024/08/15/gallery-test.html" rel="alternate" type="text/html" title="Gallery Practice" /><published>2024-08-15T00:00:00-04:00</published><updated>2024-08-15T00:00:00-04:00</updated><id>http://localhost:4000/2024/08/15/gallery-test</id><content type="html" xml:base="http://localhost:4000/2024/08/15/gallery-test.html"><![CDATA[<!--more-->
 <h3 id="photo-gallery-practice">Photo Gallery Practice</h3>
 <p><img src="/assets/images/mount_pierce_hi_res/Crawford_Path_Marker_hi_res.jpg" alt=" Crawford Path Marker " /></p>
 <style>
@@ -190,7 +190,7 @@
     </a>
 </p>]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Mount Pierce</title><link href="http://localhost:4000/2024/08/07/Mount-Pierce.html" rel="alternate" type="text/html" title="Mount Pierce" /><published>2024-08-07T00:00:00-04:00</published><updated>2024-08-07T00:00:00-04:00</updated><id>http://localhost:4000/2024/08/07/Mount-Pierce</id><content type="html" xml:base="http://localhost:4000/2024/08/07/Mount-Pierce.html"><![CDATA[<h3 id="my-hike-of-mount-pierce">My Hike of Mount Pierce</h3>
 
-<div id="leaflet-map-c084de0ca732714dd947b0e6bbc36762" class="leaflet-map"></div>
+<div id="leaflet-map-b32ebeee9dd6109943a728addb5ab5e5" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -202,21 +202,21 @@
      "providerBasemap": "OpenTopoMap" } ;
     var blockLeafletItems = [
 
-    {id: "c2ebf7014e11c2ad84074a2cc6d74818",
+    {id: "871fe8a04fe363cda199e43dc5b10279",
               type: "LeafletMarker",
               value: {"latitude" : 44.226872,
                        "longitude" : -71.365724,
     "popupContent": "Mount Pierce ... 4312 ft"}
   },
 
-{id: "da53c549e1190949271a1cd6719679a2",
+{id: "5cab4186cf127e563b00a1e9f0ca7375",
               type: "LeafletGeoJSON",
               value: "/assets/geojson/Mount_Pierce_cmpt.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-c084de0ca732714dd947b0e6bbc36762";
+    var defaultMapElId = "leaflet-map-b32ebeee9dd6109943a728addb5ab5e5";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -349,7 +349,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map c084de0ca732714dd947b0e6bbc36762 with these args:");
+        console.log("Creating map b32ebeee9dd6109943a728addb5ab5e5 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1263,7 +1263,7 @@
 Leaflet thru Github pages on Jekyll. 
 Wish me luck.</p>
 
-<div id="leaflet-map-8f51d217420d7bfda92191d129d8ab83" class="leaflet-map"></div>
+<div id="leaflet-map-e6a8e457184d95e2af92739aa8a93e5a" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -1273,21 +1273,21 @@ Wish me luck.</p>
     var tagInputArg = {"zoom" : 14 } ;
     var blockLeafletItems = [
 
-    {id: "266de942831b471313e3ca0c9fa224b2",
+    {id: "84ed86c0490f83ea5aa3606efcba99eb",
               type: "LeafletMarker",
               value: {"latitude" : 44.010868,
                        "longitude" : -71.6491,
     "popupContent": "Russell Pond Campground"}
   },
 
-{id: "2d301d9e505f3034b42b3234b7fecbed",
+{id: "a13549d29d0e479d57b8072f9c911db7",
               type: "LeafletGeoJSON",
               value: "/assets/geojson/russell_pond_cmpt.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-8f51d217420d7bfda92191d129d8ab83";
+    var defaultMapElId = "leaflet-map-e6a8e457184d95e2af92739aa8a93e5a";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -1420,7 +1420,7 @@ Wish me luck.</p>
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 8f51d217420d7bfda92191d129d8ab83 with these args:");
+        console.log("Creating map e6a8e457184d95e2af92739aa8a93e5a with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
