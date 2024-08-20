@@ -2,7 +2,7 @@
 layout: post
 title: "Look a Rainbow!"
 ---
-Who doesn't like a rainbow?  
+### Who doesn't like a rainbow?  
 
 Seeing a rainbow brings a universal spark of joy. It brings an instant smile, a surge of pleasure.  
  
