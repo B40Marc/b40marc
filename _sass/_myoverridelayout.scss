@@ -6,7 +6,7 @@
 
 body {
   background-color: #fafafa;
-  }
+}
 
 /*
 * Links
@@ -21,18 +21,16 @@ body {
 *  }
 *}
 */
-/* a workaround the main/index page has a h2 for the body title of Posts
- * the other pages, about, contact, the body title is h1
- * overiding h2 or h1 does not work because the /@include from sass _layout scss wipes it out
- * with this adjustment they look the same.
- */
-
-.post-list-heading {
-  @include relative-font-size(2.625);
-}
 
 .post-link {
   color: $brand-color;
+}
+
+
+.post-list-sub-heading {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: $spacing-unit;
 }
 
 // overrides links/daily posts on main page i.e., Maps,Rainbows,Smiles,etc
