@@ -120,7 +120,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .page-heading { font-size: 32px; }
 
-.post-list-heading { font-size: 28px; }
+.post-list-heading { font-size: 32px; margin-bottom: 0px; font-style: italic; }
 
 .post-list { margin-left: 0; list-style: none; }
 
@@ -130,12 +130,14 @@ table td { border: 1px solid #e8e8e8; }
 
 .post-link { display: block; font-size: 24px; }
 
+.post-link-header { margin-bottom: 0px; }
+
 /** Posts */
 .post-header { margin-bottom: 30px; }
 
 .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; }
 
-@media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
+@media screen and (max-width: 800px) { .post-title { font-size: 15px; } }
 
 .post-content { margin-bottom: 30px; }
 
@@ -277,10 +279,11 @@ table td { border: 1px solid #e8e8e8; }
 body { background-color: #fafafa; }
 
 /* Links a { color: $brand-color; &:visited { color: $brand-color; } &:hover { color: green; } } */
-/* a workaround the main/index page has a h2 for the body title of Posts the other pages, about, contact, the body title is h1 overiding h2 or h1 does not work because the /@include from sass _layout scss wipes it out with this adjustment they look the same. */
-.post-list-heading { font-size: 42px; }
-
 .post-link { color: #2a7ae2; }
+
+.post-list-sub-heading { font-size: 24px; font-weight: 400; margin-bottom: 30px; }
+
+.post-list-h3 { margin-bottom: 0px; }
 
 .post-link:hover { color: #424242; text-decoration: underline dotted; }
 

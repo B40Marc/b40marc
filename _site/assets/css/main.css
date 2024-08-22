@@ -283,6 +283,8 @@ body { background-color: #fafafa; }
 
 .post-list-sub-heading { font-size: 24px; font-weight: 400; margin-bottom: 30px; }
 
+.post-list-h3 { margin-bottom: 0px; }
+
 .post-link:hover { color: #424242; text-decoration: underline dotted; }
 
 .page-link { color: #111; }

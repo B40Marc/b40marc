@@ -26,11 +26,16 @@ body {
   color: $brand-color;
 }
 
-
+// This styles new sub-heading on home.html
 .post-list-sub-heading {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: $spacing-unit;
+}
+
+// This styles h3 heading inside <ul> <li> post-list
+.post-list-h3 {
+  margin-bottom: 0px;
 }
 
 // overrides links/daily posts on main page i.e., Maps,Rainbows,Smiles,etc
