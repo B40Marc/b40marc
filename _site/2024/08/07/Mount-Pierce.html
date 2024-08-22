@@ -54,7 +54,7 @@
   <div class="post-content e-content" itemprop="articleBody">
     <h3 id="my-hike-of-mount-pierce">My Hike of Mount Pierce</h3>
 
-<div id="leaflet-map-a65c588995374a02722a387eb7180c4c" class="leaflet-map"></div>
+<div id="leaflet-map-51c268e45a8ebe3452cd05b85161d7b0" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -66,21 +66,21 @@
      "providerBasemap": "OpenTopoMap" } ;
     var blockLeafletItems = [
 
-    {id: "90b74eaafd16a08283b5ca921d3d1ae5",
+    {id: "85b207ea424bda0716b80596ff90af74",
               type: "LeafletMarker",
               value: {"latitude" : 44.226872,
                        "longitude" : -71.365724,
     "popupContent": "Mount Pierce ... 4312 ft"}
   },
 
-{id: "c41bbee1360e9a2f60594a6c8545591c",
+{id: "3b3ddc58ab5d7a192c59be32fb20d931",
               type: "LeafletGeoJSON",
               value: "/assets/geojson/Mount_Pierce_cmpt.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-a65c588995374a02722a387eb7180c4c";
+    var defaultMapElId = "leaflet-map-51c268e45a8ebe3452cd05b85161d7b0";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -213,7 +213,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map a65c588995374a02722a387eb7180c4c with these args:");
+        console.log("Creating map 51c268e45a8ebe3452cd05b85161d7b0 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1122,6 +1122,29 @@
 <p>Today was a wonderfully beautiful day, in a week of not so wonderful weather. A minor cold front pushed in Tuesday night and dropped the heat, humidity, and rain from the forecast. Later, this week the remnants of tropical storm Debby will encroach. Not fun, being above 4000’ with lightning and thunderboomers. But, today was sunny, mid-60’s, high scattered clouds. Just a perfect hiking day!</p>
 
 <p>Most of the hike was on the Crawford path, one of the oldest in the Whites. This was perhaps the busiest path I’ve encountered, save for Franconia ridge, on my hikes. A Wednesday, mid-week day and crossed about a hundred hikers. And then there were the trail runners, at least six of them. One guy passed me both ascent and decent, before I’d made 2/3rd of my climb. On the way down he was running pell-mell full speed like a jack rabbit. They are a different breed. I just don’t get it.</p>
+<style>
+    .image-gallery-index {overflow: auto; margin-left: -1%!important;}
+    .image-gallery-index a {float: left; display: block; margin: 0 0 1% 1%; width: 31%; text-decoration: none !important;}
+    .image-gallery-index a img {width: 100%; display: block;}
+    .image-gallery-index a span {display: block; text-align: center; padding: 3px 0;}
+</style>
+
+<p class="image-gallery-index">
+  
+    <a href="/assets/images/mount_pierce_hi_res/Crawford_Path_Marker_hi_res.jpg" title="Crawford Path Marker">
+      <img src="/assets/images/mount_pierce_lo_res/Crawford_Path_Marker_lo_res.jpg" />
+        <span>Crawford Path Marker</span>
+    </a>
+    <a href="/assets/images/mount_pierce_hi_res/Gibbs_Falls_hi_res.jpg" title="Gibbs Falls">
+      <img src="/assets/images/mount_pierce_lo_res/Gibbs_Falls_lo_res.jpg" />
+        <span>Gibbs Falls</span>
+    </a>
+    <a href="/assets/images/mount_pierce_hi_res/Mount_Pierce_Summit_hi_res.jpg" title="Mount Pierce Summit!">
+      <img src="/assets/images/mount_pierce_lo_res/Mount_Pierce_Summit_lo_res.jpg" />
+        <span>Mount Pierce Summit!</span>
+    </a>
+</p>
+
 
   </div><a class="u-url" href="/2024/08/07/Mount-Pierce.html" hidden></a>
 </article>

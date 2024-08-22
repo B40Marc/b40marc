@@ -9,7 +9,7 @@ galleries:
   - title: Link to Hi_Res
     image: /assets/images/mount_pierce_lo_res/Crawford_Path_Marker_lo_res.jpg
     url: /assets/images/mount_pierce_hi_res/Crawford_Path_Marker_hi_res.jpg
-    date: 2024-08-15
+date: 2024-08-15
 ---
 <!--more-->
 ### Photo Gallery Practice
