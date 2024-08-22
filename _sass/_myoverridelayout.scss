@@ -42,6 +42,7 @@ body {
 .post-link:hover {
   color: $grey-color-dark;
   text-decoration: underline dotted;
+  text-decoration-thickness: 2px;
 }
 
 // overrides ???
