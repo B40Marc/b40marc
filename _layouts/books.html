@@ -1,0 +1,30 @@
+---
+layout: default
+title: 
+name:
+author:
+picture:
+
+---
+<article class="books"
+
+  <img src="{{ page.picture }}" alt="Photo of a {{ page.title | downcase }}">
+
+
+  <header class="book-header">
+    <h1>Book Profile: {{ page.title }}</h1>
+  </header>
+
+  <div class="book-name {{ page.name | downcase }}">
+    {{ page.name }}
+  </div>
+
+  <div class="book-author {{ page.author | downcase }}">
+    {{ page.author }}
+  </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
