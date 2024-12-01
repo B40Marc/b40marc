@@ -1,0 +1,201 @@
+I"%<!--more-->
+<h3 id="photo-gallery-practice">Photo Gallery Practice</h3>
+<p><img src="/assets/images/mount_pierce_hi_res/Crawford_Path_Marker_hi_res.jpg" alt=" Crawford Path Marker " /></p>
+<style>
+    .image-gallery {overflow: auto; margin-left: -1%!important;}
+    .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 31%;}
+    .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
+    .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: normal; padding: 3px 0;}
+    .image-gallery li a img {width: 100%; display: block;}
+</style>
+
+<div>
+<ul class="image-gallery">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+      
+      
+      
+      
+      
+        <li><a href="/assets/images/mount_pierce_lo_res/Crawford_Path_Marker_lo_res.jpg" title="Crawford Path Marker ">
+              <img src="/assets/images/mount_pierce_lo_res/Crawford_Path_Marker_lo_res.jpg" alt="Crawford Path Marker " title="Crawford Path Marker " />
+
+          <span>Crawford Path Marker </span>
+            </a>
+        </li>
+    
+   
+
+  
+    
+
+      
+      
+      
+      
+      
+        <li><a href="/assets/images/mount_pierce_lo_res/Gibbs_Falls_lo_res.jpg" title="Gibbs Falls ">
+              <img src="/assets/images/mount_pierce_lo_res/Gibbs_Falls_lo_res.jpg" alt="Gibbs Falls " title="Gibbs Falls " />
+
+          <span>Gibbs Falls </span>
+            </a>
+        </li>
+    
+   
+
+  
+    
+
+      
+      
+      
+      
+      
+        <li><a href="/assets/images/mount_pierce_lo_res/Mount_Pierce_Summit_lo_res.jpg" title="Mount Pierce Summit ">
+              <img src="/assets/images/mount_pierce_lo_res/Mount_Pierce_Summit_lo_res.jpg" alt="Mount Pierce Summit " title="Mount Pierce Summit " />
+
+          <span>Mount Pierce Summit </span>
+            </a>
+        </li>
+    
+   
+
+  
+
+  
+
+</ul>
+</div>
+
+<style>
+    .image-gallery {overflow: auto; margin-left: -1%!important;}
+    .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 31%;}
+    .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
+    .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: normal; padding: 3px 0;}
+    .image-gallery li a img {width: 100%; display: block;}
+</style>
+
+<div>
+<ul class="image-gallery">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+      
+      
+      
+      
+      
+        <li><a href="/assets/images/mount_pierce_hi_res/Crawford_Path_Marker_hi_res.jpg" title="Crawford Path Marker ">
+              <img src="/assets/images/mount_pierce_hi_res/Crawford_Path_Marker_hi_res.jpg" alt="Crawford Path Marker " title="Crawford Path Marker " />
+
+          <span>Crawford Path Marker </span>
+            </a>
+        </li>
+    
+   
+
+  
+    
+
+      
+      
+      
+      
+      
+        <li><a href="/assets/images/mount_pierce_hi_res/Gibbs_Falls_hi_res.jpg" title="Gibbs Falls ">
+              <img src="/assets/images/mount_pierce_hi_res/Gibbs_Falls_hi_res.jpg" alt="Gibbs Falls " title="Gibbs Falls " />
+
+          <span>Gibbs Falls </span>
+            </a>
+        </li>
+    
+   
+
+  
+    
+
+      
+      
+      
+      
+      
+        <li><a href="/assets/images/mount_pierce_hi_res/Mount_Pierce_Summit_hi_res.jpg" title="Mount Pierce Summit ">
+              <img src="/assets/images/mount_pierce_hi_res/Mount_Pierce_Summit_hi_res.jpg" alt="Mount Pierce Summit " title="Mount Pierce Summit " />
+
+          <span>Mount Pierce Summit </span>
+            </a>
+        </li>
+    
+   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</ul>
+</div>
+
+<style>
+    .image-gallery-index {overflow: auto; margin-left: -1%!important;}
+    .image-gallery-index a {float: left; display: block; margin: 0 0 1% 1%; width: 31%; text-decoration: none !important;}
+    .image-gallery-index a img {width: 100%; display: block;}
+    .image-gallery-index a span {display: block; text-align: center; padding: 3px 0;}
+</style>
+
+<p class="image-gallery-index">
+  
+    <a href="/" title="Link to homepage">
+      <img src="/assets/images/mount_pierce_lo_res/Crawford_Path_Marker_lo_res.jpg" />
+        <span>Link to homepage</span>
+    </a>
+    <a href="/assets/images/mount_pierce_hi_res/Crawford_Path_Marker_hi_res.jpg" title="Link to Hi_Res">
+      <img src="/assets/images/mount_pierce_lo_res/Crawford_Path_Marker_lo_res.jpg" />
+        <span>Link to Hi_Res</span>
+    </a>
+</p>
+
+:ET
