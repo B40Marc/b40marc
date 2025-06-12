@@ -1,34 +1,32 @@
-I"�<h3 id="map-experiment-with-leaflet">Map Experiment with Leaflet</h3>
+I"S�<h3 id="todays-beach-walk">Today’s Beach Walk</h3>
 
-<p>My effort to start publishing maps of my walks and hikes online.
-Leaflet thru Github pages on Jekyll. 
-Wish me luck.</p>
-
-<div id="leaflet-map-1f2844533f25f74c55470a04e979bc8b" class="leaflet-map"></div>
+<div id="leaflet-map-cf1943311e9baca61bbdd2c354f2baa6" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
     var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
 
     // Get tag input arguments & inside block object list
-    var tagInputArg = {"zoom" : 14 } ;
+    var tagInputArg = { "center": [42.86047, -70.81895],
+                 "zoom" : 13, 
+     } ;
     var blockLeafletItems = [
 
-    {id: "378256c2e211abc031920892f19793ca",
+    {id: "de4b60471e055d7d7f51b1fd44c2fb1d",
               type: "LeafletMarker",
-              value: {"latitude" : 44.010868,
-                       "longitude" : -71.6491,
-    "popupContent": "Russell Pond Campground"}
+              value: {"latitude" : 42.86031,
+                       "longitude" : -70.81685,
+    "popupContent": "Beach Walk ... 3.5m"}
   },
 
-{id: "3fef539a8a11a6fbb87efe9e405dc8c8",
+{id: "48405076997ba77f133849dd744192dd",
               type: "LeafletGeoJSON",
-              value: "/assets/geojson/russell_pond_cmpt.geojson" },
+              value: "/assets/geojson/Todays_Beach_Walk.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-1f2844533f25f74c55470a04e979bc8b";
+    var defaultMapElId = "leaflet-map-cf1943311e9baca61bbdd2c354f2baa6";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -161,7 +159,7 @@ Wish me luck.</p>
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 1f2844533f25f74c55470a04e979bc8b with these args:");
+        console.log("Creating map cf1943311e9baca61bbdd2c354f2baa6 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1063,12 +1061,5 @@ Wish me luck.</p>
 })();
 </script>
 
-<p>Yea!! Partial success, a map with a pop-up marker. The correct map, but not a walk trace. (resolved)<br />
-I’ve been trying to add a “LineString” layer for days, literally, with no joy. So, I’ll keep reading and experimenting. It will come.</p>
-
-<p>Double Yea!!. More success, and finally a trace of my walk/hike within the map. It’s embarrassing to think of how long this has taken and how many web searches I’ve made in the effort (hint:over a week).</p>
-
-<p>This walk was through Russel Pond Campground in the White Mountains of New Hampshire. I was surveying the entire campground for suitable campsites for future visits.</p>
-
-<p>Also, I’d be remiss for not giving a thank you and shout-out to <a href="https://davidjvitale.com">David Vitale</a> for his amazing work on the <a href="https://davidjvitale.com/tech/jekyll-leaflet/">jekyll-leaflet</a> plugin!</p>
+<p>Today was my standard beach walk, about 3.5 miles just past the New Hampshire border-line. It took 65 minutes and it was a cool afternoon. A large flock,covey of Piping Plovers were working the tide line. Perhaps the largest gathering I’ve ever seen on Salisbury beach. Easily, two hundred birds.</p>
 :ET

@@ -1,32 +1,32 @@
-I"G�<h3 id="my-hike-of-mount-pierce">My Hike of Mount Pierce</h3>
+I"S�<h3 id="todays-beach-walk">Today’s Beach Walk</h3>
 
-<div id="leaflet-map-d16b4fa890295de0d1ce32262e4ce907" class="leaflet-map"></div>
+<div id="leaflet-map-01ace951aa41d82a4fcdd6e6dd67f816" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
     var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
 
     // Get tag input arguments & inside block object list
-    var tagInputArg = { "center": [44.224038, -71.389107],
+    var tagInputArg = { "center": [42.86047, -70.81895],
                  "zoom" : 13, 
-     "providerBasemap": "OpenTopoMap" } ;
+     } ;
     var blockLeafletItems = [
 
-    {id: "20631857e61466fa4704ebec4c34e982",
+    {id: "9ef4c0cf888f4153fd9904354e3ef8ee",
               type: "LeafletMarker",
-              value: {"latitude" : 44.226872,
-                       "longitude" : -71.365724,
-    "popupContent": "Mount Pierce ... 4312 ft"}
+              value: {"latitude" : 42.86031,
+                       "longitude" : -70.81685,
+    "popupContent": "Beach Walk ... 3.5m"}
   },
 
-{id: "ef6b14b18b3401b8284446ab4a83e528",
+{id: "bd5a9bfe5ea793f1c5cd2aded5399f0e",
               type: "LeafletGeoJSON",
-              value: "/assets/geojson/Mount_Pierce_cmpt.geojson" },
+              value: "/assets/geojson/Todays_Beach_Walk.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-d16b4fa890295de0d1ce32262e4ce907";
+    var defaultMapElId = "leaflet-map-01ace951aa41d82a4fcdd6e6dd67f816";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -159,7 +159,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map d16b4fa890295de0d1ce32262e4ce907 with these args:");
+        console.log("Creating map 01ace951aa41d82a4fcdd6e6dd67f816 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1061,34 +1061,5 @@
 })();
 </script>
 
-<p>Mount Pierce is the 27th highest of the 48 four thousand footers recognized by the Appalachian Mountain Club (in descending order from number one Mount Washington).</p>
-
-<p>Mount Pierce is my 27th mountain climbed of the forty-eight. Mount Pierce is 4312 feet.</p>
-
-<p>Today was a wonderfully beautiful day, in a week of not so wonderful weather. A minor cold front pushed in Tuesday night and dropped the heat, humidity, and rain from the forecast. Later, this week the remnants of tropical storm Debby will encroach. Not fun, being above 4000’ with lightning and thunderboomers. But, today was sunny, mid-60’s, high scattered clouds. Just a perfect hiking day!</p>
-
-<p>Most of the hike was on the Crawford path, one of the oldest in the Whites. This was perhaps the busiest path I’ve encountered, save for Franconia ridge, on my hikes. A Wednesday, mid-week day and crossed about a hundred hikers. And then there were the trail runners, at least six of them. One guy passed me both ascent and decent, before I’d made two thirds of my climb. On the way down he was running pell-mell full speed like a jack rabbit. They are a different breed. I just don’t get it.</p>
-<style>
-    .image-gallery-index {overflow: auto; margin-left: -1%!important;}
-    .image-gallery-index a {float: left; display: block; margin: 0 0 1% 1%; width: 31%; text-decoration: none !important;}
-    .image-gallery-index a img {width: 100%; display: block;}
-    .image-gallery-index a span {display: block; text-align: center; padding: 3px 0;}
-</style>
-
-<p class="image-gallery-index">
-  
-    <a href="/assets/images/mount_pierce_hi_res/Crawford_Path_Marker_hi_res.jpg" title="Crawford Path Marker">
-      <img src="/assets/images/mount_pierce_lo_res/Crawford_Path_Marker_lo_res.jpg" />
-        <span>Crawford Path Marker</span>
-    </a>
-    <a href="/assets/images/mount_pierce_hi_res/Gibbs_Falls_hi_res.jpg" title="Gibbs Falls">
-      <img src="/assets/images/mount_pierce_lo_res/Gibbs_Falls_lo_res.jpg" />
-        <span>Gibbs Falls</span>
-    </a>
-    <a href="/assets/images/mount_pierce_hi_res/Mount_Pierce_Summit_hi_res.jpg" title="Mount Pierce Summit!">
-      <img src="/assets/images/mount_pierce_lo_res/Mount_Pierce_Summit_lo_res.jpg" />
-        <span>Mount Pierce Summit!</span>
-    </a>
-</p>
-
+<p>Today was my standard beach walk, about 3.5 miles just past the New Hampshire border-line. It took 65 minutes and it was a cool afternoon. A large flock,covey of Piping Plovers were working the tide line. Perhaps the largest gathering I’ve ever seen on Salisbury beach. Easily, two hundred birds.</p>
 :ET

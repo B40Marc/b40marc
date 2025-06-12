@@ -1,4 +1,4 @@
-I"%<!--more-->
+I"-<!--more-->
 <h3 id="photo-gallery-practice">Photo Gallery Practice</h3>
 <p><img src="/assets/images/mount_pierce_hi_res/Crawford_Path_Marker_hi_res.jpg" alt=" Crawford Path Marker " /></p>
 <style>
@@ -11,6 +11,8 @@
 
 <div>
 <ul class="image-gallery">
+
+  
 
   
 
@@ -100,6 +102,8 @@
 
 <div>
 <ul class="image-gallery">
+
+  
 
   
 

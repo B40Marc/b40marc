@@ -1,6 +1,6 @@
 I"¥„<h3 id="my-hike-of-mount-adams">My Hike of Mount Adams</h3>
 
-<div id="leaflet-map-2730c331d10e0ff535226ff0cf8777ef" class="leaflet-map"></div>
+<div id="leaflet-map-9da1310b67de777b71b1634697ccba9e" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -12,21 +12,21 @@
      "providerBasemap": "OpenTopoMap" } ;
     var blockLeafletItems = [
 
-    {id: "f3ae3eb216d7f5af60b69edb40b52fbe",
+    {id: "3b0244ae66a004cf78ca0260c584b989",
               type: "LeafletMarker",
               value: {"latitude" : 44.320615,
                        "longitude" : -71.291574,
     "popupContent": "Mount Adams ... 5774 ft"}
   },
 
-{id: "edbbce2a9a16adb73bdcf292e217b88a",
+{id: "f27af7d1a9804ada2e73b938221d86c8",
               type: "LeafletGeoJSON",
               value: "/assets/geojson/mount_adams.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-2730c331d10e0ff535226ff0cf8777ef";
+    var defaultMapElId = "leaflet-map-9da1310b67de777b71b1634697ccba9e";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -159,7 +159,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 2730c331d10e0ff535226ff0cf8777ef with these args:");
+        console.log("Creating map 9da1310b67de777b71b1634697ccba9e with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments

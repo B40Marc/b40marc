@@ -1,86 +1,34 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- leaflet js and css -->
-     
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+I"�<h3 id="map-experiment-with-leaflet">Map Experiment with Leaflet</h3>
 
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Mount Pierce | Marc’s Musings</title>
-<meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Mount Pierce" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="My Hike of Mount Pierce" />
-<meta property="og:description" content="My Hike of Mount Pierce" />
-<link rel="canonical" href="http://localhost:4000/2024/08/07/Mount-Pierce.html" />
-<meta property="og:url" content="http://localhost:4000/2024/08/07/Mount-Pierce.html" />
-<meta property="og:site_name" content="Marc’s Musings" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-08-07T00:00:00-04:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Mount Pierce" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-08-07T00:00:00-04:00","datePublished":"2024-08-07T00:00:00-04:00","description":"My Hike of Mount Pierce","headline":"Mount Pierce","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2024/08/07/Mount-Pierce.html"},"url":"http://localhost:4000/2024/08/07/Mount-Pierce.html"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Marc's Musings" /></head>
-<body><header class="site-header" role="banner">
+<p>My effort to start publishing maps of my walks and hikes online.
+Leaflet thru Github pages on Jekyll. 
+Wish me luck.</p>
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Marc&#39;s Musings</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/books.html">Books</a><a class="page-link" href="/contact.html">Contact</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Mount Pierce</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="2024-08-07T00:00:00-04:00" itemprop="datePublished">Aug 7, 2024
-      </time></p>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <h3 id="my-hike-of-mount-pierce">My Hike of Mount Pierce</h3>
-
-<div id="leaflet-map-a4794b472ee9338134f76f813c8a6084" class="leaflet-map"></div>
+<div id="leaflet-map-e76a0a2cda05c2e33c7020be9745f075" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
     var esriLeafletCdn = "https://unpkg.com/esri-leaflet/dist/";
 
     // Get tag input arguments & inside block object list
-    var tagInputArg = { "center": [44.224038, -71.389107],
-                 "zoom" : 13, 
-     "providerBasemap": "OpenTopoMap" } ;
+    var tagInputArg = {"zoom" : 14 } ;
     var blockLeafletItems = [
 
-    {id: "0562b91a5511c6a8cc23c36cfa484358",
+    {id: "9e7903627a37bbcece8c2202604d9711",
               type: "LeafletMarker",
-              value: {"latitude" : 44.226872,
-                       "longitude" : -71.365724,
-    "popupContent": "Mount Pierce ... 4312 ft"}
+              value: {"latitude" : 44.010868,
+                       "longitude" : -71.6491,
+    "popupContent": "Russell Pond Campground"}
   },
 
-{id: "37bb75c94a8cbe43eabdfe1303fba150",
+{id: "154b57b53bb10485bff99423b0c86973",
               type: "LeafletGeoJSON",
-              value: "/assets/geojson/Mount_Pierce_cmpt.geojson" },
+              value: "/assets/geojson/russell_pond_cmpt.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-a4794b472ee9338134f76f813c8a6084";
+    var defaultMapElId = "leaflet-map-e76a0a2cda05c2e33c7020be9745f075";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -213,7 +161,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map a4794b472ee9338134f76f813c8a6084 with these args:");
+        console.log("Creating map e76a0a2cda05c2e33c7020be9745f075 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1115,65 +1063,12 @@
 })();
 </script>
 
-<p>Mount Pierce is the 27th highest of the 48 four thousand footers recognized by the Appalachian Mountain Club (in descending order from number one Mount Washington).</p>
+<p>Yea!! Partial success, a map with a pop-up marker. The correct map, but not a walk trace. (resolved)<br />
+I’ve been trying to add a “LineString” layer for days, literally, with no joy. So, I’ll keep reading and experimenting. It will come.</p>
 
-<p>Mount Pierce is my 27th mountain climbed of the forty-eight. Mount Pierce is 4312 feet.</p>
+<p>Double Yea!!. More success, and finally a trace of my walk/hike within the map. It’s embarrassing to think of how long this has taken and how many web searches I’ve made in the effort (hint:over a week).</p>
 
-<p>Today was a wonderfully beautiful day, in a week of not so wonderful weather. A minor cold front pushed in Tuesday night and dropped the heat, humidity, and rain from the forecast. Later, this week the remnants of tropical storm Debby will encroach. Not fun, being above 4000’ with lightning and thunderboomers. But, today was sunny, mid-60’s, high scattered clouds. Just a perfect hiking day!</p>
+<p>This walk was through Russel Pond Campground in the White Mountains of New Hampshire. I was surveying the entire campground for suitable campsites for future visits.</p>
 
-<p>Most of the hike was on the Crawford path, one of the oldest in the Whites. This was perhaps the busiest path I’ve encountered, save for Franconia ridge, on my hikes. A Wednesday, mid-week day and crossed about a hundred hikers. And then there were the trail runners, at least six of them. One guy passed me both ascent and decent, before I’d made two thirds of my climb. On the way down he was running pell-mell full speed like a jack rabbit. They are a different breed. I just don’t get it.</p>
-<style>
-    .image-gallery-index {overflow: auto; margin-left: -1%!important;}
-    .image-gallery-index a {float: left; display: block; margin: 0 0 1% 1%; width: 31%; text-decoration: none !important;}
-    .image-gallery-index a img {width: 100%; display: block;}
-    .image-gallery-index a span {display: block; text-align: center; padding: 3px 0;}
-</style>
-
-<p class="image-gallery-index">
-  
-    <a href="/assets/images/mount_pierce_hi_res/Crawford_Path_Marker_hi_res.jpg" title="Crawford Path Marker">
-      <img src="/assets/images/mount_pierce_lo_res/Crawford_Path_Marker_lo_res.jpg" />
-        <span>Crawford Path Marker</span>
-    </a>
-    <a href="/assets/images/mount_pierce_hi_res/Gibbs_Falls_hi_res.jpg" title="Gibbs Falls">
-      <img src="/assets/images/mount_pierce_lo_res/Gibbs_Falls_lo_res.jpg" />
-        <span>Gibbs Falls</span>
-    </a>
-    <a href="/assets/images/mount_pierce_hi_res/Mount_Pierce_Summit_hi_res.jpg" title="Mount Pierce Summit!">
-      <img src="/assets/images/mount_pierce_lo_res/Mount_Pierce_Summit_lo_res.jpg" />
-        <span>Mount Pierce Summit!</span>
-    </a>
-</p>
-
-
-  </div><a class="u-url" href="/2024/08/07/Mount-Pierce.html" hidden></a>
-</article>
-
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">Marc&#39;s Musings</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Another Blogger</li><li><a class="u-email" href="mailto: &#98;&#52;&#48;&#109;&#97;&#114;&#99;&commat;&#97;&#111;&#108;&period;&#99;&#111;&#109; "> &#98;&#52;&#48;&#109;&#97;&#114;&#99;&commat;&#97;&#111;&#108;&period;&#99;&#111;&#109; </a></li></ul>
-      </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
-</div>
-
-      <div class="footer-col footer-col-3">
-        <p style="font-size:1.15em;">Thought I&#39;d something more to say ...</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
-</body>
-
-</html>
+<p>Also, I’d be remiss for not giving a thank you and shout-out to <a href="https://davidjvitale.com">David Vitale</a> for his amazing work on the <a href="https://davidjvitale.com/tech/jekyll-leaflet/">jekyll-leaflet</a> plugin!</p>
+:ET
