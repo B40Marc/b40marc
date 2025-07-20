@@ -1,6 +1,6 @@
 ---
 layout: post
-tile: "Today's Walk"
+title: "Daily Walk"
 ---
 
 ### Today's Beach Walk
@@ -14,9 +14,9 @@ tile: "Today's Walk"
     "popupContent": "Beach Walk ... 3.5m"}
   %}
 
-{% leaflet_geojson "/assets/geojson/Todays_Beach_Walk.geojson" %}
+{% leaflet_geojson "/assets/geojson/2024-11-30_daily_walk.geojson" %}
 
 {% endleaflet_map %}
 
 
-Today was my standard beach walk, about 3.5 miles just past the New Hampshire border-line. It took 65 minutes and it was a cool afternoon. A large flock,covey of Piping Plovers were working the tide line. Perhaps the largest gathering I've ever seen on Salisbury beach. Easily, two hundred birds.
+Today was my standard beach walk, about 3.5 miles just past the New Hampshire border-line. It took 65 minutes and it was a cool afternoon. A large flock, covey of Piping Plovers were working the tide line. Perhaps the largest gathering I've ever seen on Salisbury beach. Easily, two hundred birds.
