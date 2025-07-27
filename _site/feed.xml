@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-04T14:33:11-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marc’s Musings</title><subtitle>Thought I'd something more to say ...</subtitle><entry><title type="html">Daily Walk</title><link href="http://localhost:4000/2025/06/29/daily-walk.html" rel="alternate" type="text/html" title="Daily Walk" /><published>2025-06-29T00:00:00-04:00</published><updated>2025-06-29T00:00:00-04:00</updated><id>http://localhost:4000/2025/06/29/daily-walk</id><content type="html" xml:base="http://localhost:4000/2025/06/29/daily-walk.html"><![CDATA[<h3 id="todays-street-walk">Today’s Street Walk</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-27T14:11:48-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Marc’s Musings</title><subtitle>Thought I'd something more to say ...</subtitle><entry><title type="html">Daily Walk</title><link href="http://localhost:4000/2025/06/29/daily-walk.html" rel="alternate" type="text/html" title="Daily Walk" /><published>2025-06-29T00:00:00-04:00</published><updated>2025-06-29T00:00:00-04:00</updated><id>http://localhost:4000/2025/06/29/daily-walk</id><content type="html" xml:base="http://localhost:4000/2025/06/29/daily-walk.html"><![CDATA[<h3 id="todays-street-walk">Today’s Street Walk</h3>
 
-<div id="leaflet-map-20c519cb70efac6f0909171bb8315055" class="leaflet-map"></div>
+<div id="leaflet-map-35513748996e10956002681491fbc548" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -12,7 +12,7 @@
      } ;
     var blockLeafletItems = [
 
-{id: "e4b0c2ec10b504e233e91c096ed89669",
+{id: "58f6146812552b37239f4bd74ac49e6a",
               type: "LeafletMarker",
               value: {"latitude" : 42.859101,
                    "longitude" : -70.817935,
@@ -20,14 +20,14 @@
  },
 
 
-{id: "fcf2d90017096dbb58f979e1c691ab65",
+{id: "c2609d754f642c6166675346d6b20f61",
               type: "LeafletGeoJSON",
               value: "/assets/geojson/2025-06-29_daily_walk.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-20c519cb70efac6f0909171bb8315055";
+    var defaultMapElId = "leaflet-map-35513748996e10956002681491fbc548";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -160,7 +160,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 20c519cb70efac6f0909171bb8315055 with these args:");
+        console.log("Creating map 35513748996e10956002681491fbc548 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -1066,7 +1066,7 @@
 
 <p><img src="/assets/images/IMG_4554.JPG" alt="Birds Nest" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Today’s Street Walk]]></summary></entry><entry><title type="html">Daily Walk</title><link href="http://localhost:4000/2024/11/30/todays-walk.html" rel="alternate" type="text/html" title="Daily Walk" /><published>2024-11-30T00:00:00-05:00</published><updated>2024-11-30T00:00:00-05:00</updated><id>http://localhost:4000/2024/11/30/todays-walk</id><content type="html" xml:base="http://localhost:4000/2024/11/30/todays-walk.html"><![CDATA[<h3 id="todays-beach-walk">Today’s Beach Walk</h3>
 
-<div id="leaflet-map-9c7c8771c3d1d4be0a6ef1f27416aa81" class="leaflet-map"></div>
+<div id="leaflet-map-9e6793681b1311e9ca185953410418d5" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -1078,21 +1078,21 @@
      } ;
     var blockLeafletItems = [
 
-    {id: "06086fd3dc445c9403afcaee5b5e7282",
+    {id: "a53673aa142f732aad288c261235d773",
               type: "LeafletMarker",
               value: {"latitude" : 42.86031,
                        "longitude" : -70.81685,
     "popupContent": "Beach Walk ... 3.5m"}
   },
 
-{id: "11c6927bf8c9e2f8b11404bd902d81a2",
+{id: "010a420188d613018231c0fd2ae3b1d2",
               type: "LeafletGeoJSON",
               value: "/assets/geojson/2024-11-30_daily_walk.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-9c7c8771c3d1d4be0a6ef1f27416aa81";
+    var defaultMapElId = "leaflet-map-9e6793681b1311e9ca185953410418d5";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -1225,7 +1225,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map 9c7c8771c3d1d4be0a6ef1f27416aa81 with these args:");
+        console.log("Creating map 9e6793681b1311e9ca185953410418d5 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -2129,7 +2129,7 @@
 
 <p>Today was my standard beach walk, about 3.5 miles just past the New Hampshire border-line. It took 65 minutes and it was a cool afternoon. A large flock, covey of Piping Plovers were working the tide line. Perhaps the largest gathering I’ve ever seen on Salisbury beach. Easily, two hundred birds.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Today’s Beach Walk]]></summary></entry><entry><title type="html">Mount Adams</title><link href="http://localhost:4000/2024/09/04/Mount-Adams.html" rel="alternate" type="text/html" title="Mount Adams" /><published>2024-09-04T00:00:00-04:00</published><updated>2024-09-04T00:00:00-04:00</updated><id>http://localhost:4000/2024/09/04/Mount-Adams</id><content type="html" xml:base="http://localhost:4000/2024/09/04/Mount-Adams.html"><![CDATA[<h3 id="my-hike-of-mount-adams">My Hike of Mount Adams</h3>
 
-<div id="leaflet-map-af8eb90e754ffa790f66bfb2873f86ba" class="leaflet-map"></div>
+<div id="leaflet-map-849f4c7e7b330b96a356a87d0c2b1cb0" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -2141,21 +2141,21 @@
      "providerBasemap": "OpenTopoMap" } ;
     var blockLeafletItems = [
 
-    {id: "d176b25979d4e682636cbed3279e3605",
+    {id: "f05b5cff57a3042627a7aec2a717af25",
               type: "LeafletMarker",
               value: {"latitude" : 44.320615,
                        "longitude" : -71.291574,
     "popupContent": "Mount Adams ... 5774 ft"}
   },
 
-{id: "73108a8edede7dc749df50304c713dfa",
+{id: "f63613599007e4986742a86365301b76",
               type: "LeafletGeoJSON",
               value: "/assets/geojson/mount_adams.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-af8eb90e754ffa790f66bfb2873f86ba";
+    var defaultMapElId = "leaflet-map-849f4c7e7b330b96a356a87d0c2b1cb0";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -2288,7 +2288,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map af8eb90e754ffa790f66bfb2873f86ba with these args:");
+        console.log("Creating map 849f4c7e7b330b96a356a87d0c2b1cb0 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -3229,12 +3229,6 @@
   
 
   
-
-  
-
-  
-
-  
     
 
       
@@ -3302,12 +3296,6 @@
 
 <div>
 <ul class="image-gallery">
-
-  
-
-  
-
-  
 
   
 
@@ -3408,7 +3396,7 @@
     </a>
 </p>]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Mount Pierce</title><link href="http://localhost:4000/2024/08/07/Mount-Pierce.html" rel="alternate" type="text/html" title="Mount Pierce" /><published>2024-08-07T00:00:00-04:00</published><updated>2024-08-07T00:00:00-04:00</updated><id>http://localhost:4000/2024/08/07/Mount-Pierce</id><content type="html" xml:base="http://localhost:4000/2024/08/07/Mount-Pierce.html"><![CDATA[<h3 id="my-hike-of-mount-pierce">My Hike of Mount Pierce</h3>
 
-<div id="leaflet-map-fd0ca8e52786c2db8c87e38036c1c9ba" class="leaflet-map"></div>
+<div id="leaflet-map-e0c2a859315fcbe0fada14d05716701a" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -3420,21 +3408,21 @@
      "providerBasemap": "OpenTopoMap" } ;
     var blockLeafletItems = [
 
-    {id: "a2606e509f07ac4dcf4f7314c01c3fd1",
+    {id: "d220ff9294338875366dd058c4d628b9",
               type: "LeafletMarker",
               value: {"latitude" : 44.226872,
                        "longitude" : -71.365724,
     "popupContent": "Mount Pierce ... 4312 ft"}
   },
 
-{id: "26314bcf9982cfe0030ef90ea4a3000c",
+{id: "11dd2aa0b5ddb2fa6159c620fd45b8dd",
               type: "LeafletGeoJSON",
               value: "/assets/geojson/Mount_Pierce_cmpt.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-fd0ca8e52786c2db8c87e38036c1c9ba";
+    var defaultMapElId = "leaflet-map-e0c2a859315fcbe0fada14d05716701a";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -3567,7 +3555,7 @@
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map fd0ca8e52786c2db8c87e38036c1c9ba with these args:");
+        console.log("Creating map e0c2a859315fcbe0fada14d05716701a with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
@@ -4503,7 +4491,7 @@
 Leaflet thru Github pages on Jekyll. 
 Wish me luck.</p>
 
-<div id="leaflet-map-d5a0988e90f53fa3ed3536a01a0d0db4" class="leaflet-map"></div>
+<div id="leaflet-map-47c61e9920d591461e817dcac6bb2fb4" class="leaflet-map"></div>
 <script>(() => {
 // Specify configuration variables, setup any elements and styling
     var leafletCdn = "https://unpkg.com/leaflet@1.6.0/dist/";
@@ -4513,21 +4501,21 @@ Wish me luck.</p>
     var tagInputArg = {"zoom" : 14 } ;
     var blockLeafletItems = [
 
-    {id: "c3de50dcbf4365d38745cbe7c8dcac32",
+    {id: "32a0cb167ee6e7e1583e208ee94c855c",
               type: "LeafletMarker",
               value: {"latitude" : 44.010868,
                        "longitude" : -71.6491,
     "popupContent": "Russell Pond Campground"}
   },
 
-{id: "6befe84bf05d5b1c0592ce8801901058",
+{id: "fd3f4e1a7214d8686d6a7c05cb58afea",
               type: "LeafletGeoJSON",
               value: "/assets/geojson/russell_pond_cmpt.geojson" },
 
 ];
 
     // Override the map div id if specified, apply default CSS
-    var defaultMapElId = "leaflet-map-d5a0988e90f53fa3ed3536a01a0d0db4";
+    var defaultMapElId = "leaflet-map-47c61e9920d591461e817dcac6bb2fb4";
    var defaultMapElStyle = "height:300px; margin-top:15px; margin-bottom:15px";
     var mapEl = document.getElementById(defaultMapElId);
     if('divId' in tagInputArg){
@@ -4660,7 +4648,7 @@ Wish me luck.</p>
 
 //The actual section that is called that creates a map
     function createMap(){
-        console.log("Creating map d5a0988e90f53fa3ed3536a01a0d0db4 with these args:");
+        console.log("Creating map 47c61e9920d591461e817dcac6bb2fb4 with these args:");
         console.log(tagInputArg);
 
         //Initialize Map with the correct input arguments
